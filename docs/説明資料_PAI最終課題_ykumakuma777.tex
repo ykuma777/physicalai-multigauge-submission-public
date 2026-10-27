@@ -1,0 +1,123 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=19mm,headheight=0pt,footskip=9mm]{geometry}
+\usepackage{fontspec,xeCJK,graphicx,booktabs,tabularx,array,xcolor,hyperref}
+\setmainfont{Arial}
+\setCJKmainfont{Noto Sans JP}
+\setCJKmonofont{Noto Sans JP}
+\hypersetup{
+  pdftitle={PAI最終課題_ykumakuma777},
+  pdfauthor={},
+  pdfsubject={手先カメラで3台のゲージを点検し異常箇所を指示するGazeboデモ},
+  pdfkeywords={ROS 2,Gazebo,画像AI,HOG,SVM}
+}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\linespread{1.12}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.24}
+\pagestyle{plain}
+\newcommand{\heading}[1]{\par\vspace{5pt}{\large\bfseries #1}\par\vspace{1pt}}
+\newcommand{\note}[1]{{\small #1}}
+\begin{document}
+
+{\LARGE\bfseries 3台のゲージを画像で点検し、\\異常箇所を指し示すロボット}\par
+{\normalsize PAI最終課題\_ykumakuma777　／　ROS 2・Gazeboによる実行記録}\par
+
+\heading{1．目的と実際の動作}
+CRANE+ V2の手先カメラで、既知位置のゲージA・B・Cを順番に撮影する。画像AIが各盤面の針を正常／異常に分類し、異常と判断した対象だけをロボットが非接触姿勢で指した後、初期姿勢（home）へ戻る。
+
+\begin{center}
+\fcolorbox{black!25}{black!3}{\parbox{0.93\linewidth}{
+\textbf{点検：}A → B → Cの観測姿勢へ移動・到達確認 → その場の新しいROS画像を取得 → 画像AI判定。\\
+\textbf{結果の指示：}判定が揃った後、異常対象をA・B・C順に指す → home。全台正常なら指示せず「異常なし」と表示する。
+}}
+\end{center}
+指示のための2回目の移動は、撮り直し・再判定・経時監視ではない。対象の準備条件や正解ラベルは実行後の採点専用で、画像推論と指示対象選択には渡さない。
+
+\heading{2．画面のシグナル}
+\begin{tabularx}{\linewidth}{@{}p{43mm}X@{}}
+\toprule
+表示 & 意味 \\
+\midrule
+\textcolor{green!45!black}{緑「AI判定：正常」}／\textcolor{red!70!black}{赤橙「AI判定：異常」}
+ & 取得画像に対するAIの分類。正解したことを示す色ではない。\\
+灰色／「判定不能」「処理停止」 & 判定待ち、または取得・推論・確認が成立しなかった状態。正常扱いしない。\\
+「到達確認済み」／「画像一致」 & 関節状態による到達、推論入力と表示画像の対応を確認した印。AIの答えの正しさを示さない。\\
+\bottomrule
+\end{tabularx}
+
+\vspace{3pt}
+\includegraphics[width=0.93\linewidth]{representative_1_B.png}\par
+\note{実際の日本語UIとGazebo録画からの代表画面（Bのみ異常）。右のA・B・Cは動画編集時の対象識別用注釈で、AI入力ではない。}
+
+\newpage
+{\LARGE\bfseries 3例の比較と主要な検証結果}\par
+
+\heading{1．今回、新しく実行した3試行}
+Nは正常、Aは異常。準備条件と画像AIの出力を分けて記す。各試行でA→B→Cを撮影し、指示姿勢を3秒保持してhomeへ戻るところまで確認した。
+
+\begin{tabularx}{\linewidth}{@{}>{\centering\arraybackslash}p{8mm}
+  >{\centering\arraybackslash}p{28mm}
+  >{\centering\arraybackslash}p{30mm}
+  >{\centering\arraybackslash}p{22mm}
+  >{\centering\arraybackslash}p{19mm}
+  >{\centering\arraybackslash}p{17mm}
+  >{\raggedleft\arraybackslash}X@{}}
+\toprule
+例 & 準備A/B/C & 画像AI A/B/C & 指示順 & 軌道到達 & home & 秒\\
+\midrule
+1 & NAN & NAN & B & 5/5 & 済 & 88.9\\
+2 & NAA & NAA & B → C & 6/6 & 済 & 103.1\\
+3 & NNN & NNN & なし & 4/4 & 済 & 78.7\\
+\bottomrule
+\end{tabularx}
+\note{所要時間は対象準備の開始からhome到達まで。準備列は検証用の正解であり、実行中のAIや動作選択へ渡していない。3試行のタスク成否は3/3成功。}
+
+\heading{2．開発失敗も含む全試行}
+\begin{tabularx}{\linewidth}{@{}p{32mm}*{5}{>{\centering\arraybackslash}X}@{}}
+\toprule
+区分 & \shortstack{タスク\\成功} & \shortstack{取得画像の\\AI判定正解} &
+\shortstack{予定画像の\\判定完了} & \shortstack{送信軌道の\\到達} &
+\shortstack{home\\復帰}\\
+\midrule
+今回の3試行 & 3/3 & 9/9 & 9/9 & 15/15 & 3/3\\
+従来の16試行 & 11/16 & 35/35 & 35/48 & 63/63 & 11/16\\
+\textbf{全19試行} & \textbf{14/19} & \textbf{44/44} & \textbf{44/57} & \textbf{78/78} & \textbf{14/19}\\
+\bottomrule
+\end{tabularx}
+
+\vspace{3pt}
+全19試行には、開発中に中断した\textbf{5試行}も含めた。44/44は「実際に取得・推論できた画像」に限った結果で、未知の盤面や条件に対する一般的な分類精度ではない。44/57は未取得13画像も含む\textbf{判定完了数}であり、分類精度と呼ばない。78/78は送信した軌道の到達で、送信前に安全停止した移動処理1件は別に残した。
+
+\heading{3．何を確認したか}
+今回の3試行では、画像9件の判定、異常対象と指示順、各軌道の到達、3秒保持、home復帰を確認した。色はAI判定、到達確認と画像一致は処理の確認である。正解かどうかは実行後に設定した条件と照合して採点した。
+
+失敗記録は削除していない。SDF解析中断や画像枚数の監査経緯、全19試行の個別結果は、同梱の\texttt{MULTIGAUGE\_FINAL\_SPEC\_CONFIRMED.pdf}と\texttt{RESULTS\_FINAL.md}、評価JSON・CSVを参照。
+
+\newpage
+{\LARGE\bfseries 画像AI・工夫・限界・再現}\par
+
+\heading{1．AIは何をしているか}
+Gazeboの針盤画像36枚を正常／異常の教師付き例として用意した。角度単位で学習用24枚と未学習検証用12枚に分け、学習側を固定seedで拡張してHOG＋線形SVMを作成した。未学習検証画像は12/12正解だったが、同じ盤面・照明の限定条件である。
+
+\begin{tabularx}{\linewidth}{@{}p{28mm}X@{}}
+\toprule
+処理 & 平易に言うと \\
+\midrule
+HOG & 画像の小さな領域ごとに、針の線や輪郭がどの方向へ伸びているかを数値にする。\\
+線形SVM & 正常例と異常例の数値を分ける境界を学習し、新しい画像がどちら側にあるかを判定する。\\
+\bottomrule
+\end{tabularx}
+
+単純な色のしきい値ではなく、撮影画像の針の見え方を入力する。学習角度は離散的な例で、連続した正常範囲や実設備の故障閾値ではない。SVM marginは分類境界からの符号付き出力で、確率や故障の重症度ではない。
+
+\heading{2．実行と記録の工夫}
+観測姿勢への\textbf{到達後}に新しいROS画像を取得する。run ID、撮影時刻、画像SHA-256、推論入力と画面表示の一致、軌道送信回数と到達結果を保存する。机・ゲージ・手先カメラを含む既知物体のMoveIt衝突検査を行い、取得・推論・到達・表示照合が失敗した試行は後続を止める。自動撮り直しや軌道の自動再送はしない。
+
+\heading{3．再現方法と確認先}
+固定イメージを使う分離環境はROS domain 46、VNC \texttt{localhost:6084}。\texttt{multigauge/README.md}の順で環境を起動し、対象状態を準備してから試行する。例：\texttt{multigauge/start.ps1} → \texttt{run.sh --combination NAN --campaign review --record}。NAAとNNNも同じ手順で切り替える。動画は今回の3試行を動作全区間\textbf{2倍速}で示し、動作部分を省略していない。再現ZIPにはコード、設定、モデル、入力画像、全19試行の結果、失敗記録と更新PDFを収録した。
+
+\heading{4．限界}
+結果は既知位置・限定照明・合成ゲージのGazebo実験であり、実機の安全性や実設備の故障診断を示さない。反射・遮蔽・盤面差・境界角度・未知位置・取付誤差・長時間安定性は未十分検証。詳細な仕様、採点基準、失敗の経緯は同梱の仕様書と\texttt{RESULTS\_FINAL.md}に残す。
+
+\end{document}

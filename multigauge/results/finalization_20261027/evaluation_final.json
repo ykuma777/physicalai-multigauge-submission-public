@@ -1,0 +1,3707 @@
+{
+  "schema_version": 1,
+  "audit_result": "PASS",
+  "task_result": "PARTIAL",
+  "evaluated_at_utc": "2026-10-27T08:21:52.003507+00:00",
+  "producer": {
+    "program": "/home/ubuntu/multigauge/final_evaluate.py",
+    "sha256": "34026eb5cbae21ab5362ff4d12e28193f1f39d43851799aa3a405fba831f99d7",
+    "imported_scorer_sha256": "e43eaf288bf7cbddd63db444797dd1294f892e8db312f199c922b729d2750099",
+    "exact_argv": [
+      "/home/ubuntu/multigauge/final_evaluate.py",
+      "--output-dir",
+      "/home/ubuntu/multigauge/results/finalization_20261027",
+      "--replay-observed"
+    ]
+  },
+  "denominator_policy": "Every prepared/runtime attempt is retained. Observed classification excludes unacquired images; planned completion includes all three requested images per attempt. No failure is discarded.",
+  "groups": {
+    "old16": {
+      "trial_count": 16,
+      "observed_classification_correct": 35,
+      "observed_classification_total": 35,
+      "observed_classification_correct_fraction": 1.0,
+      "planned_image_total": 48,
+      "correct_planned_image_completion": 35,
+      "correct_planned_image_completion_fraction": 0.7291666666666666,
+      "missing_or_unclassified_images": 13,
+      "selection_correct_trials": 11,
+      "pointing_correct_trials": 11,
+      "motion_handlers_attempted": 64,
+      "sent_trajectories": 63,
+      "sent_trajectory_arrivals_pass": 63,
+      "unsent_motion_handlers": 1,
+      "all_motion_arrivals_trials": 11,
+      "home_return_pass": 11,
+      "task_success_trials": 11,
+      "task_success_rate": 0.6875,
+      "elapsed_sec_total": 1202.3010000000002,
+      "elapsed_sec_mean": 75.14381250000001
+    },
+    "new_final_ui": {
+      "trial_count": 3,
+      "observed_classification_correct": 9,
+      "observed_classification_total": 9,
+      "observed_classification_correct_fraction": 1.0,
+      "planned_image_total": 9,
+      "correct_planned_image_completion": 9,
+      "correct_planned_image_completion_fraction": 1.0,
+      "missing_or_unclassified_images": 0,
+      "selection_correct_trials": 3,
+      "pointing_correct_trials": 3,
+      "motion_handlers_attempted": 15,
+      "sent_trajectories": 15,
+      "sent_trajectory_arrivals_pass": 15,
+      "unsent_motion_handlers": 0,
+      "all_motion_arrivals_trials": 3,
+      "home_return_pass": 3,
+      "task_success_trials": 3,
+      "task_success_rate": 1.0,
+      "elapsed_sec_total": 270.68,
+      "elapsed_sec_mean": 90.22666666666667
+    },
+    "overall": {
+      "trial_count": 19,
+      "observed_classification_correct": 44,
+      "observed_classification_total": 44,
+      "observed_classification_correct_fraction": 1.0,
+      "planned_image_total": 57,
+      "correct_planned_image_completion": 44,
+      "correct_planned_image_completion_fraction": 0.7719298245614035,
+      "missing_or_unclassified_images": 13,
+      "selection_correct_trials": 14,
+      "pointing_correct_trials": 14,
+      "motion_handlers_attempted": 79,
+      "sent_trajectories": 78,
+      "sent_trajectory_arrivals_pass": 78,
+      "unsent_motion_handlers": 1,
+      "all_motion_arrivals_trials": 14,
+      "home_return_pass": 14,
+      "task_success_trials": 14,
+      "task_success_rate": 0.7368421052631579,
+      "elapsed_sec_total": 1472.9810000000002,
+      "elapsed_sec_mean": 77.5253157894737
+    }
+  },
+  "by_campaign": {
+    "eight_combinations": {
+      "trial_count": 9,
+      "observed_classification_correct": 26,
+      "observed_classification_total": 26,
+      "observed_classification_correct_fraction": 1.0,
+      "planned_image_total": 27,
+      "correct_planned_image_completion": 26,
+      "correct_planned_image_completion_fraction": 0.9629629629629629,
+      "missing_or_unclassified_images": 1,
+      "selection_correct_trials": 8,
+      "pointing_correct_trials": 8,
+      "motion_handlers_attempted": 47,
+      "sent_trajectories": 46,
+      "sent_trajectory_arrivals_pass": 46,
+      "unsent_motion_handlers": 1,
+      "all_motion_arrivals_trials": 8,
+      "home_return_pass": 8,
+      "task_success_trials": 8,
+      "task_success_rate": 0.8888888888888888,
+      "elapsed_sec_total": 856.0000000000001,
+      "elapsed_sec_mean": 95.11111111111113
+    },
+    "final_japanese_ui": {
+      "trial_count": 3,
+      "observed_classification_correct": 9,
+      "observed_classification_total": 9,
+      "observed_classification_correct_fraction": 1.0,
+      "planned_image_total": 9,
+      "correct_planned_image_completion": 9,
+      "correct_planned_image_completion_fraction": 1.0,
+      "missing_or_unclassified_images": 0,
+      "selection_correct_trials": 3,
+      "pointing_correct_trials": 3,
+      "motion_handlers_attempted": 15,
+      "sent_trajectories": 15,
+      "sent_trajectory_arrivals_pass": 15,
+      "unsent_motion_handlers": 0,
+      "all_motion_arrivals_trials": 3,
+      "home_return_pass": 3,
+      "task_success_trials": 3,
+      "task_success_rate": 1.0,
+      "elapsed_sec_total": 270.68,
+      "elapsed_sec_mean": 90.22666666666667
+    },
+    "held_out": {
+      "trial_count": 2,
+      "observed_classification_correct": 6,
+      "observed_classification_total": 6,
+      "observed_classification_correct_fraction": 1.0,
+      "planned_image_total": 6,
+      "correct_planned_image_completion": 6,
+      "correct_planned_image_completion_fraction": 1.0,
+      "missing_or_unclassified_images": 0,
+      "selection_correct_trials": 2,
+      "pointing_correct_trials": 2,
+      "motion_handlers_attempted": 11,
+      "sent_trajectories": 11,
+      "sent_trajectory_arrivals_pass": 11,
+      "unsent_motion_handlers": 0,
+      "all_motion_arrivals_trials": 2,
+      "home_return_pass": 2,
+      "task_success_trials": 2,
+      "task_success_rate": 1.0,
+      "elapsed_sec_total": 200.457,
+      "elapsed_sec_mean": 100.2285
+    },
+    "pilot": {
+      "trial_count": 5,
+      "observed_classification_correct": 3,
+      "observed_classification_total": 3,
+      "observed_classification_correct_fraction": 1.0,
+      "planned_image_total": 15,
+      "correct_planned_image_completion": 3,
+      "correct_planned_image_completion_fraction": 0.2,
+      "missing_or_unclassified_images": 12,
+      "selection_correct_trials": 1,
+      "pointing_correct_trials": 1,
+      "motion_handlers_attempted": 6,
+      "sent_trajectories": 6,
+      "sent_trajectory_arrivals_pass": 6,
+      "unsent_motion_handlers": 0,
+      "all_motion_arrivals_trials": 1,
+      "home_return_pass": 1,
+      "task_success_trials": 1,
+      "task_success_rate": 0.2,
+      "elapsed_sec_total": 145.844,
+      "elapsed_sec_mean": 29.168799999999997
+    }
+  },
+  "coverage": {
+    "combinations_expected": [
+      "NNN",
+      "NNA",
+      "NAN",
+      "NAA",
+      "ANN",
+      "ANA",
+      "AAN",
+      "AAA"
+    ],
+    "combinations_preparation_attempted": [
+      "AAA",
+      "AAN",
+      "ANA",
+      "ANN",
+      "NAA",
+      "NAN",
+      "NNA",
+      "NNN"
+    ],
+    "combinations_executed": [
+      "AAA",
+      "AAN",
+      "ANA",
+      "ANN",
+      "NAA",
+      "NAN",
+      "NNA",
+      "NNN"
+    ],
+    "combinations_successful": [
+      "AAA",
+      "AAN",
+      "ANA",
+      "ANN",
+      "NAA",
+      "NAN",
+      "NNA",
+      "NNN"
+    ],
+    "missing": []
+  },
+  "runs": [
+    {
+      "run_id": "mg_20261026T221103Z_a9bf9b",
+      "campaign": "pilot",
+      "combination": "NAA",
+      "runtime_result": "FAIL",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": null,
+        "B": null,
+        "C": null
+      },
+      "image_correct": {
+        "A": false,
+        "B": false,
+        "C": false
+      },
+      "image_correct_count": 0,
+      "image_total": 3,
+      "image_observed_count": 0,
+      "image_audit": {
+        "A": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        },
+        "B": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        },
+        "C": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        }
+      },
+      "expected_targets": [
+        "B",
+        "C"
+      ],
+      "selected_targets": [],
+      "pointed_targets": [],
+      "selection_correct": false,
+      "pointing_correct": false,
+      "motion_arrivals_pass": 0,
+      "motion_arrivals_total": 0,
+      "motions": [],
+      "all_motion_arrivals": false,
+      "motion_sequence_correct": false,
+      "home_return": false,
+      "display_audit_pass": false,
+      "task_success": false,
+      "elapsed_sec": 9.94,
+      "runtime_elapsed_sec": 0.39979680406395346,
+      "started_at_utc": "2026-10-26T22:11:06.123Z",
+      "finished_at_utc": "2026-10-26T22:11:16.063Z",
+      "abort_reason": "RuntimeError: display acknowledgement differs from inference/selection state",
+      "issues": [
+        "runtime did not complete with PASS",
+        "A: image or inference missing: indeterminate",
+        "A: prediction unavailable or invalid",
+        "A: capture and inference hashes differ or unavailable",
+        "A: observation arrival not confirmed",
+        "A: fresh capture timestamps missing",
+        "A: simulation image/JointState freshness timestamps missing or invalid",
+        "B: image or inference missing: indeterminate",
+        "B: prediction unavailable or invalid",
+        "B: capture and inference hashes differ or unavailable",
+        "B: observation arrival not confirmed",
+        "B: fresh capture timestamps missing",
+        "B: simulation image/JointState freshness timestamps missing or invalid",
+        "C: image or inference missing: indeterminate",
+        "C: prediction unavailable or invalid",
+        "C: capture and inference hashes differ or unavailable",
+        "C: observation arrival not confirmed",
+        "C: fresh capture timestamps missing",
+        "C: simulation image/JointState freshness timestamps missing or invalid",
+        "selected abnormal target set incorrect or indeterminate",
+        "completed pointing sequence differs from expected A/B/C order",
+        "motion sequence incomplete or differs from expected observed/pointed/home sequence",
+        "home return not confirmed",
+        "display hash/label audit missing, failed, or incomplete",
+        "one or more image labels incorrect or indeterminate"
+      ],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261026T221103Z_a9bf9b/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261026T221103Z_a9bf9b.json",
+      "runtime_manifest_sha256": "cddb5246a035a9657b083e811725ab60f2cf0e5ee11dff83511be5f7b3699950",
+      "truth_record_sha256": "48718bc347d5faa95925018dd4f1ece9b0401ae3575e85ae288e2292092c989a",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261026T221144Z_74754f",
+      "campaign": "pilot",
+      "combination": "NAA",
+      "runtime_result": "FAIL",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": null,
+        "B": null,
+        "C": null
+      },
+      "image_correct": {
+        "A": false,
+        "B": false,
+        "C": false
+      },
+      "image_correct_count": 0,
+      "image_total": 3,
+      "image_observed_count": 0,
+      "image_audit": {
+        "A": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        },
+        "B": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        },
+        "C": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        }
+      },
+      "expected_targets": [
+        "B",
+        "C"
+      ],
+      "selected_targets": [],
+      "pointed_targets": [],
+      "selection_correct": false,
+      "pointing_correct": false,
+      "motion_arrivals_pass": 0,
+      "motion_arrivals_total": 0,
+      "motions": [],
+      "all_motion_arrivals": false,
+      "motion_sequence_correct": false,
+      "home_return": false,
+      "display_audit_pass": false,
+      "task_success": false,
+      "elapsed_sec": 11.636,
+      "runtime_elapsed_sec": 0.6919876399915665,
+      "started_at_utc": "2026-10-26T22:11:46.851Z",
+      "finished_at_utc": "2026-10-26T22:11:58.487Z",
+      "abort_reason": "AttributeError: can't set attribute 'clients'",
+      "issues": [
+        "runtime did not complete with PASS",
+        "A: image or inference missing: indeterminate",
+        "A: prediction unavailable or invalid",
+        "A: capture and inference hashes differ or unavailable",
+        "A: observation arrival not confirmed",
+        "A: fresh capture timestamps missing",
+        "A: simulation image/JointState freshness timestamps missing or invalid",
+        "B: image or inference missing: indeterminate",
+        "B: prediction unavailable or invalid",
+        "B: capture and inference hashes differ or unavailable",
+        "B: observation arrival not confirmed",
+        "B: fresh capture timestamps missing",
+        "B: simulation image/JointState freshness timestamps missing or invalid",
+        "C: image or inference missing: indeterminate",
+        "C: prediction unavailable or invalid",
+        "C: capture and inference hashes differ or unavailable",
+        "C: observation arrival not confirmed",
+        "C: fresh capture timestamps missing",
+        "C: simulation image/JointState freshness timestamps missing or invalid",
+        "selected abnormal target set incorrect or indeterminate",
+        "completed pointing sequence differs from expected A/B/C order",
+        "motion sequence incomplete or differs from expected observed/pointed/home sequence",
+        "home return not confirmed",
+        "display hash/label audit missing, failed, or incomplete",
+        "one or more image labels incorrect or indeterminate"
+      ],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261026T221144Z_74754f/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261026T221144Z_74754f.json",
+      "runtime_manifest_sha256": "f127e60ffa3248f6068c7d84436e522890e7438d8f61c901922278b2924e7a2f",
+      "truth_record_sha256": "db3ca848b028b53da1ed13ff52bc394f78a33de574bf800bd056539088561b48",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261026T221209Z_3c7586",
+      "campaign": "pilot",
+      "combination": "NAA",
+      "runtime_result": "FAIL",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": null,
+        "B": null,
+        "C": null
+      },
+      "image_correct": {
+        "A": false,
+        "B": false,
+        "C": false
+      },
+      "image_correct_count": 0,
+      "image_total": 3,
+      "image_observed_count": 0,
+      "image_audit": {
+        "A": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        },
+        "B": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        },
+        "C": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        }
+      },
+      "expected_targets": [
+        "B",
+        "C"
+      ],
+      "selected_targets": [],
+      "pointed_targets": [],
+      "selection_correct": false,
+      "pointing_correct": false,
+      "motion_arrivals_pass": 0,
+      "motion_arrivals_total": 0,
+      "motions": [],
+      "all_motion_arrivals": false,
+      "motion_sequence_correct": false,
+      "home_return": false,
+      "display_audit_pass": false,
+      "task_success": false,
+      "elapsed_sec": 11.486,
+      "runtime_elapsed_sec": 0.7337860340485349,
+      "started_at_utc": "2026-10-26T22:12:11.925Z",
+      "finished_at_utc": "2026-10-26T22:12:23.411Z",
+      "abort_reason": "RuntimeError: collision pose/size mismatch camera_demo_table",
+      "issues": [
+        "runtime did not complete with PASS",
+        "A: image or inference missing: indeterminate",
+        "A: prediction unavailable or invalid",
+        "A: capture and inference hashes differ or unavailable",
+        "A: observation arrival not confirmed",
+        "A: fresh capture timestamps missing",
+        "A: simulation image/JointState freshness timestamps missing or invalid",
+        "B: image or inference missing: indeterminate",
+        "B: prediction unavailable or invalid",
+        "B: capture and inference hashes differ or unavailable",
+        "B: observation arrival not confirmed",
+        "B: fresh capture timestamps missing",
+        "B: simulation image/JointState freshness timestamps missing or invalid",
+        "C: image or inference missing: indeterminate",
+        "C: prediction unavailable or invalid",
+        "C: capture and inference hashes differ or unavailable",
+        "C: observation arrival not confirmed",
+        "C: fresh capture timestamps missing",
+        "C: simulation image/JointState freshness timestamps missing or invalid",
+        "selected abnormal target set incorrect or indeterminate",
+        "completed pointing sequence differs from expected A/B/C order",
+        "motion sequence incomplete or differs from expected observed/pointed/home sequence",
+        "home return not confirmed",
+        "display hash/label audit missing, failed, or incomplete",
+        "one or more image labels incorrect or indeterminate"
+      ],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261026T221209Z_3c7586/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261026T221209Z_3c7586.json",
+      "runtime_manifest_sha256": "d39dfb4c9c6e04030e15f303e764c9097aed5349970d812acbcafeab6efffc15",
+      "truth_record_sha256": "8feef333c59fdf0a1ea39c5c9590ddc8d79eb6b7f13b6ac64aec6afa93c93fbc",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261026T221246Z_e4b14c",
+      "campaign": "pilot",
+      "combination": "NAA",
+      "runtime_result": "FAIL",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": null,
+        "B": null,
+        "C": null
+      },
+      "image_correct": {
+        "A": false,
+        "B": false,
+        "C": false
+      },
+      "image_correct_count": 0,
+      "image_total": 3,
+      "image_observed_count": 0,
+      "image_audit": {
+        "A": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        },
+        "B": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        },
+        "C": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        }
+      },
+      "expected_targets": [
+        "B",
+        "C"
+      ],
+      "selected_targets": [],
+      "pointed_targets": [],
+      "selection_correct": false,
+      "pointing_correct": false,
+      "motion_arrivals_pass": 0,
+      "motion_arrivals_total": 0,
+      "motions": [],
+      "all_motion_arrivals": false,
+      "motion_sequence_correct": false,
+      "home_return": false,
+      "display_audit_pass": false,
+      "task_success": false,
+      "elapsed_sec": 11.589,
+      "runtime_elapsed_sec": 0.6535129289841279,
+      "started_at_utc": "2026-10-26T22:12:48.409Z",
+      "finished_at_utc": "2026-10-26T22:12:59.998Z",
+      "abort_reason": "RuntimeError: MoveIt collision/state invalid: [OrderedDict([('header', OrderedDict([('stamp', OrderedDict([('sec', 153), ('nanosec', 465000000)])), ('frame_id', 'world')])), ('position', OrderedDict([('x', 0.013000000268817778), ('y', -0.007643845509560341), ('z', 0.24051746488706385)])), ('normal', OrderedDict([('x', 0.23077154258601207), ('y', 0.6246568475894932), ('z', 0.746021660471081)])), ('depth', 0.005246452703182701), ('contact_body_1', 'crane_plus_link3'), ('body_type_1', 0), ('contact_body_2', 'inspection_camera_link'), ('body_type_2', 0)])]",
+      "issues": [
+        "runtime did not complete with PASS",
+        "A: image or inference missing: indeterminate",
+        "A: prediction unavailable or invalid",
+        "A: capture and inference hashes differ or unavailable",
+        "A: observation arrival not confirmed",
+        "A: fresh capture timestamps missing",
+        "A: simulation image/JointState freshness timestamps missing or invalid",
+        "B: image or inference missing: indeterminate",
+        "B: prediction unavailable or invalid",
+        "B: capture and inference hashes differ or unavailable",
+        "B: observation arrival not confirmed",
+        "B: fresh capture timestamps missing",
+        "B: simulation image/JointState freshness timestamps missing or invalid",
+        "C: image or inference missing: indeterminate",
+        "C: prediction unavailable or invalid",
+        "C: capture and inference hashes differ or unavailable",
+        "C: observation arrival not confirmed",
+        "C: fresh capture timestamps missing",
+        "C: simulation image/JointState freshness timestamps missing or invalid",
+        "selected abnormal target set incorrect or indeterminate",
+        "completed pointing sequence differs from expected A/B/C order",
+        "motion sequence incomplete or differs from expected observed/pointed/home sequence",
+        "home return not confirmed",
+        "display hash/label audit missing, failed, or incomplete",
+        "one or more image labels incorrect or indeterminate"
+      ],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261026T221246Z_e4b14c/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261026T221246Z_e4b14c.json",
+      "runtime_manifest_sha256": "2bcef75ede7783cab18cfe598ab7328c71ad42c1910ccf60b2f5bbd8cad2ee99",
+      "truth_record_sha256": "51e39a48c1af729f95dcffe560550810d9b332939e228daa71ab2c8a7b9ebc68",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261026T221606Z_99f978",
+      "campaign": "pilot",
+      "combination": "NAA",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "07af61722b8083c8cb10073cc47beed5e42e8db2d31f3d873d604841aa4a4bc7",
+          "received_at_utc": "2026-10-26T22:16:37.337Z",
+          "arrival_at_utc": "2026-10-26T22:16:31.829Z",
+          "image_header_stamp": {
+            "sec": 52,
+            "nanosec": 400000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 47,
+            "nanosec": 473000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "1aa5a19b83dd19ae29b2f82044adcff77ba81d63eb698b8144da0d63c5c26e7b",
+          "received_at_utc": "2026-10-26T22:16:53.340Z",
+          "arrival_at_utc": "2026-10-26T22:16:48.358Z",
+          "image_header_stamp": {
+            "sec": 66,
+            "nanosec": 900000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 62,
+            "nanosec": 413000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "8f97782ccbc0342b83365e9f1649798a7c236682264b0bb7ca6de0655e094d36",
+          "received_at_utc": "2026-10-26T22:17:10.074Z",
+          "arrival_at_utc": "2026-10-26T22:17:05.008Z",
+          "image_header_stamp": {
+            "sec": 82,
+            "nanosec": 100000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 77,
+            "nanosec": 503000000
+          }
+        }
+      },
+      "expected_targets": [
+        "B",
+        "C"
+      ],
+      "selected_targets": [
+        "B",
+        "C"
+      ],
+      "pointed_targets": [
+        "B",
+        "C"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 6,
+      "motion_arrivals_total": 6,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "bcb7aae3cc64450b8c06bcfeaadb9c6f",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "9540c917f29846678568690422c98baa",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "e0345378c1dc4897a145f8b987641e79",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_B",
+          "command_id": "cb98dfaeaad742b6a2f4fea50cc9be7d",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_B",
+          "to": "point_C",
+          "command_id": "8b8cd2e6ac9548e0be273f8173499ef6",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_C",
+          "to": "home",
+          "command_id": "e8314db909654b63a1c688e7cc65ebb8",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 101.193,
+      "runtime_elapsed_sec": 91.64268379402347,
+      "started_at_utc": "2026-10-26T22:16:09.239Z",
+      "finished_at_utc": "2026-10-26T22:17:50.432Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261026T221606Z_99f978/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261026T221606Z_99f978.json",
+      "runtime_manifest_sha256": "63231dd30f23cb5e042eb2b9ba16622e855e38bbb8a9f813d00b2fdf7e92ec40",
+      "truth_record_sha256": "13305df20699fa99d28afeb08396e19ee741d56e5aa0d1d40bdfea5186296eca",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T021158Z_5fdbf8",
+      "campaign": "eight_combinations",
+      "combination": "NNN",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "normal",
+        "C": "normal"
+      },
+      "predictions": {
+        "A": "normal",
+        "B": "normal",
+        "C": "normal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "cf58bf5f3b488e80e68689d68aacf98cd282399af3429f6c7f033d4130a59004",
+          "received_at_utc": "2026-10-27T02:12:29.638Z",
+          "arrival_at_utc": "2026-10-27T02:12:24.289Z",
+          "image_header_stamp": {
+            "sec": 12950,
+            "nanosec": 600000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 12945,
+            "nanosec": 853000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "8b72df6a7e26eeb6962d53dc53642fa1409a11d97b8c711fd37233e800b86076",
+          "received_at_utc": "2026-10-27T02:12:46.451Z",
+          "arrival_at_utc": "2026-10-27T02:12:40.461Z",
+          "image_header_stamp": {
+            "sec": 12965,
+            "nanosec": 400000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 12960,
+            "nanosec": 203000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "cf6433a62d19408ed41c56d952d3f382dee0a982e67c66f126a999be9a4f07ab",
+          "received_at_utc": "2026-10-27T02:13:03.559Z",
+          "arrival_at_utc": "2026-10-27T02:12:57.668Z",
+          "image_header_stamp": {
+            "sec": 12980,
+            "nanosec": 600000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 12975,
+            "nanosec": 353000000
+          }
+        }
+      },
+      "expected_targets": [],
+      "selected_targets": [],
+      "pointed_targets": [],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 4,
+      "motion_arrivals_total": 4,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "4345119ecb5e43a7a956c6cfaa746b65",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "8bba21c6af6b466aa8cba4fbc96219d7",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "e9de53d8859343d7b7d6a6e81e6e0344",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "home",
+          "command_id": "94faaaf73e2b483082273090bb72aec2",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 78.134,
+      "runtime_elapsed_sec": 66.35399493097793,
+      "started_at_utc": "2026-10-27T02:12:01.328Z",
+      "finished_at_utc": "2026-10-27T02:13:19.462Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T021158Z_5fdbf8/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T021158Z_5fdbf8.json",
+      "runtime_manifest_sha256": "6c2e7a4455a040712b514ad9d4e08dab76fe66c88025af067cfaf472592e545e",
+      "truth_record_sha256": "292f6643361994eca7d815bd0def2bc9b37f1b0effd5ddb107b4c3a6b44764b5",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T021324Z_cb3f78",
+      "campaign": "eight_combinations",
+      "combination": "NNA",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "normal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": "normal",
+        "B": "normal",
+        "C": "abnormal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "7558951d6fe4a6011a67487947b84c15961e4b9d373c56aa29c75103ea1a2e76",
+          "received_at_utc": "2026-10-27T02:13:55.697Z",
+          "arrival_at_utc": "2026-10-27T02:13:49.815Z",
+          "image_header_stamp": {
+            "sec": 13026,
+            "nanosec": 800000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13021,
+            "nanosec": 583000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "1c888ab2c46b35a7c8f0c0b5bbbff5cdf193315e2e7dab79e67aebfd95466fc4",
+          "received_at_utc": "2026-10-27T02:14:15.528Z",
+          "arrival_at_utc": "2026-10-27T02:14:07.583Z",
+          "image_header_stamp": {
+            "sec": 13044,
+            "nanosec": 500000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13037,
+            "nanosec": 393000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "7e1c5d9e3f2e762ca1ba74a07491ec31701b3f9b073be98d45836f2bc3fd09d2",
+          "received_at_utc": "2026-10-27T02:14:32.513Z",
+          "arrival_at_utc": "2026-10-27T02:14:27.342Z",
+          "image_header_stamp": {
+            "sec": 13059,
+            "nanosec": 600000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13054,
+            "nanosec": 963000000
+          }
+        }
+      },
+      "expected_targets": [
+        "C"
+      ],
+      "selected_targets": [
+        "C"
+      ],
+      "pointed_targets": [
+        "C"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 5,
+      "motion_arrivals_total": 5,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "12103aa975ba4f3c933f6ab0e21ca93a",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "088c714620594c739b48e50cdb10270d",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "8472fbae54dc47f99cdcfcfc288c3996",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_C",
+          "command_id": "0f8e33e656ba4fb7b1280b55eb44b51a",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_C",
+          "to": "home",
+          "command_id": "8fa1c182945c498993fdee7c96e3c736",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 92.769,
+      "runtime_elapsed_sec": 81.88026768295094,
+      "started_at_utc": "2026-10-27T02:13:27.505Z",
+      "finished_at_utc": "2026-10-27T02:15:00.274Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T021324Z_cb3f78/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T021324Z_cb3f78.json",
+      "runtime_manifest_sha256": "1f33dbd8534d4b5904bf41704d93d86740f4b9bb6976ed30a31386ab9c5163bd",
+      "truth_record_sha256": "be029423cc68467a09d114c7a13546fc5b8f71a3344f70246b13f43209ffbdd2",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T021505Z_8ac959",
+      "campaign": "eight_combinations",
+      "combination": "NAN",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "normal"
+      },
+      "predictions": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "normal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "eeabb566ad13b741ba9d6edb66710e8bd4f34a150db752e68032da20e873f405",
+          "received_at_utc": "2026-10-27T02:15:34.771Z",
+          "arrival_at_utc": "2026-10-27T02:15:29.454Z",
+          "image_header_stamp": {
+            "sec": 13114,
+            "nanosec": 800000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13110,
+            "nanosec": 23000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "090fb792dae95868fc1fe1cf5da01082e7acc09222d916dc309dd1bbf2c9dc76",
+          "received_at_utc": "2026-10-27T02:15:50.640Z",
+          "arrival_at_utc": "2026-10-27T02:15:45.453Z",
+          "image_header_stamp": {
+            "sec": 13129,
+            "nanosec": 0
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13124,
+            "nanosec": 403000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "32d5bd33d0c9beaebd7464cb3991d2ae1e92033cd6dadc86fbcf3ddd4651e688",
+          "received_at_utc": "2026-10-27T02:16:09.508Z",
+          "arrival_at_utc": "2026-10-27T02:16:02.363Z",
+          "image_header_stamp": {
+            "sec": 13145,
+            "nanosec": 700000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13139,
+            "nanosec": 473000000
+          }
+        }
+      },
+      "expected_targets": [
+        "B"
+      ],
+      "selected_targets": [
+        "B"
+      ],
+      "pointed_targets": [
+        "B"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 5,
+      "motion_arrivals_total": 5,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "bc7c200c8da747cc857e80302219b434",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "c394e517d9c446eb9178a2d4bb4427fa",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "9eef696b91354b5b979340e59dd3f842",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_B",
+          "command_id": "9b400a035c8740e2b253f57e6957911e",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_B",
+          "to": "home",
+          "command_id": "0de99fcb5a694d3e9ecef72a986ad2ac",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 89.446,
+      "runtime_elapsed_sec": 78.46647919202223,
+      "started_at_utc": "2026-10-27T02:15:08.572Z",
+      "finished_at_utc": "2026-10-27T02:16:38.018Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T021505Z_8ac959/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T021505Z_8ac959.json",
+      "runtime_manifest_sha256": "d8b2ebb440769103d662c789fb1f06628732c52a6c52e0af7b20901a3934b7e8",
+      "truth_record_sha256": "dc6d7291d36891e8f64db56586dc0fb86d91815f65fd62c49d41085f1beb3422",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T021643Z_953199",
+      "campaign": "eight_combinations",
+      "combination": "NAA",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "35caef6c1ca1ebe8e4fb54df04b56ea8ede15217c9aacfda2633da1171d7767b",
+          "received_at_utc": "2026-10-27T02:17:15.416Z",
+          "arrival_at_utc": "2026-10-27T02:17:09.799Z",
+          "image_header_stamp": {
+            "sec": 13203,
+            "nanosec": 900000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13198,
+            "nanosec": 883000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "89ecd00a708cc47cca32e62b1c879547b85190f23431e5c51bef7d736d25c26e",
+          "received_at_utc": "2026-10-27T02:17:31.730Z",
+          "arrival_at_utc": "2026-10-27T02:17:26.545Z",
+          "image_header_stamp": {
+            "sec": 13218,
+            "nanosec": 400000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13213,
+            "nanosec": 793000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "758c387f8bd600e3e7f23775a263385d26b58269bb60462a6112be4802833fae",
+          "received_at_utc": "2026-10-27T02:17:47.813Z",
+          "arrival_at_utc": "2026-10-27T02:17:42.535Z",
+          "image_header_stamp": {
+            "sec": 13232,
+            "nanosec": 800000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13228,
+            "nanosec": 53000000
+          }
+        }
+      },
+      "expected_targets": [
+        "B",
+        "C"
+      ],
+      "selected_targets": [
+        "B",
+        "C"
+      ],
+      "pointed_targets": [
+        "B",
+        "C"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 6,
+      "motion_arrivals_total": 6,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "2cb889dc69544d1a8e056ba40eeabe34",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "aa6c8ffdcc614c24b8206faca838d88c",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "2f6d7fc18a1f42fa8ec538eda46af2a1",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_B",
+          "command_id": "c0c0cd4b27d9470293a2e5f8b7a4f384",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_B",
+          "to": "point_C",
+          "command_id": "1f4126c1a6c24da9b4782b64d8a8afd5",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_C",
+          "to": "home",
+          "command_id": "3e1b253797184f15ad6098f2066ee5d7",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 103.537,
+      "runtime_elapsed_sec": 92.18205625494011,
+      "started_at_utc": "2026-10-27T02:16:46.999Z",
+      "finished_at_utc": "2026-10-27T02:18:30.536Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T021643Z_953199/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T021643Z_953199.json",
+      "runtime_manifest_sha256": "95b964983adadea7fa693884481501218db9cee26fa7630ca056e93af6c88e47",
+      "truth_record_sha256": "9624b1e6ab7ee06f804081b3b518daa72fadc6b13c4484b1f0ff67354a5540cb",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T021835Z_6edf7a",
+      "campaign": "eight_combinations",
+      "combination": "ANN",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "abnormal",
+        "B": "normal",
+        "C": "normal"
+      },
+      "predictions": {
+        "A": "abnormal",
+        "B": "normal",
+        "C": "normal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "833c105dae63b69b237778d3bae0ceccdfdfab5db4b5647d970208700a301429",
+          "received_at_utc": "2026-10-27T02:19:04.717Z",
+          "arrival_at_utc": "2026-10-27T02:18:59.529Z",
+          "image_header_stamp": {
+            "sec": 13301,
+            "nanosec": 200000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13296,
+            "nanosec": 523000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "9a958a3c1fcfe3d370fdd8af1f6dea20b05b328282014ad173afd92c7d5497c4",
+          "received_at_utc": "2026-10-27T02:19:24.468Z",
+          "arrival_at_utc": "2026-10-27T02:19:16.603Z",
+          "image_header_stamp": {
+            "sec": 13318,
+            "nanosec": 900000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13311,
+            "nanosec": 853000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "6afd77c7e79185d08a0831cf052d149d84dc74bd8a7569399b075ea56339aa4e",
+          "received_at_utc": "2026-10-27T02:19:42.578Z",
+          "arrival_at_utc": "2026-10-27T02:19:35.368Z",
+          "image_header_stamp": {
+            "sec": 13335,
+            "nanosec": 0
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13328,
+            "nanosec": 563000000
+          }
+        }
+      },
+      "expected_targets": [
+        "A"
+      ],
+      "selected_targets": [
+        "A"
+      ],
+      "pointed_targets": [
+        "A"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 5,
+      "motion_arrivals_total": 5,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "985e34e06f0b4679a08f19ccd850e172",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "9fb5d0057425474e8e2e25451138c363",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "5d1a1a5d4c0a4d74a9a6a9e2a1e76294",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_A",
+          "command_id": "63be02e6a6824c86a2453a77da9d14fb",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_A",
+          "to": "home",
+          "command_id": "76988f84944d414fa6f2bf42c6927ea1",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 97.407,
+      "runtime_elapsed_sec": 86.58872568595689,
+      "started_at_utc": "2026-10-27T02:18:38.723Z",
+      "finished_at_utc": "2026-10-27T02:20:16.130Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T021835Z_6edf7a/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T021835Z_6edf7a.json",
+      "runtime_manifest_sha256": "32a7dc00f380ccc0aef4d42b25d4dc8d34b585afc6df92e5396a195d6c6ea6c0",
+      "truth_record_sha256": "87e6d6273a9cdeaa127f04ef437902261fbb3079e5978ff7df802649526648c5",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T022021Z_85a93f",
+      "campaign": "eight_combinations",
+      "combination": "ANA",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "abnormal",
+        "B": "normal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": "abnormal",
+        "B": "normal",
+        "C": "abnormal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "60e4b3ffd969b5274c4099361d632155c053ef08cbcd30fdebbc06c9af9717a5",
+          "received_at_utc": "2026-10-27T02:20:51.031Z",
+          "arrival_at_utc": "2026-10-27T02:20:45.755Z",
+          "image_header_stamp": {
+            "sec": 13395,
+            "nanosec": 800000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13391,
+            "nanosec": 113000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "19a2def9b3c920b99126d0ee5bb5a55a717a9a4aba0ed23873c4a5f0945d68a8",
+          "received_at_utc": "2026-10-27T02:21:09.490Z",
+          "arrival_at_utc": "2026-10-27T02:21:01.728Z",
+          "image_header_stamp": {
+            "sec": 13412,
+            "nanosec": 300000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13405,
+            "nanosec": 363000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "67bbff13e4456f858aa63e5f616109efc6f2f1ff06102a4f5135110bc8c7c49a",
+          "received_at_utc": "2026-10-27T02:21:26.410Z",
+          "arrival_at_utc": "2026-10-27T02:21:21.085Z",
+          "image_header_stamp": {
+            "sec": 13427,
+            "nanosec": 400000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13422,
+            "nanosec": 643000000
+          }
+        }
+      },
+      "expected_targets": [
+        "A",
+        "C"
+      ],
+      "selected_targets": [
+        "A",
+        "C"
+      ],
+      "pointed_targets": [
+        "A",
+        "C"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 6,
+      "motion_arrivals_total": 6,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "21415b11475844988502eab5b310d05c",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "30fda7eb37b344b5b7da1b3efbb265b7",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "0f764fbe518a4c4fa2504f9d0e0d4adb",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_A",
+          "command_id": "2e1cfa6703d842ebbf3b10010f906a4a",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_A",
+          "to": "point_C",
+          "command_id": "8e89243f8c63481983b22fa9a6d745d3",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_C",
+          "to": "home",
+          "command_id": "fce382b2680343f684a84a02c9afc7dd",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 117.125,
+      "runtime_elapsed_sec": 106.32459073700011,
+      "started_at_utc": "2026-10-27T02:20:24.090Z",
+      "finished_at_utc": "2026-10-27T02:22:21.215Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T022021Z_85a93f/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T022021Z_85a93f.json",
+      "runtime_manifest_sha256": "435b23a35523ecac373eae1658ff1e57dd72237751a4ee2a4a4a0d089eaa52b0",
+      "truth_record_sha256": "3312f617c8001b020d225a6a30109eefb2fcc9417584a0578e6097d8fdf1d359",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T022226Z_8d8173",
+      "campaign": "eight_combinations",
+      "combination": "AAN",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "abnormal",
+        "B": "abnormal",
+        "C": "normal"
+      },
+      "predictions": {
+        "A": "abnormal",
+        "B": "abnormal",
+        "C": "normal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "bf1c2950339ca6f1019b9dfd3a30f4043fc7df9cbc07171a79b1ad93f6246ee7",
+          "received_at_utc": "2026-10-27T02:22:56.860Z",
+          "arrival_at_utc": "2026-10-27T02:22:51.001Z",
+          "image_header_stamp": {
+            "sec": 13508,
+            "nanosec": 0
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13502,
+            "nanosec": 773000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "6bbed8838b18deca5ddfc765bee25103a68c72928670b41c4f802bdca3b4d815",
+          "received_at_utc": "2026-10-27T02:23:14.287Z",
+          "arrival_at_utc": "2026-10-27T02:23:09.038Z",
+          "image_header_stamp": {
+            "sec": 13523,
+            "nanosec": 600000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13518,
+            "nanosec": 903000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "a85c1a940d70cb83a17b11a62f64e4ca14f9b6c2b253f98223ccf068ce15dd98",
+          "received_at_utc": "2026-10-27T02:23:30.248Z",
+          "arrival_at_utc": "2026-10-27T02:23:25.121Z",
+          "image_header_stamp": {
+            "sec": 13537,
+            "nanosec": 800000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13533,
+            "nanosec": 213000000
+          }
+        }
+      },
+      "expected_targets": [
+        "A",
+        "B"
+      ],
+      "selected_targets": [
+        "A",
+        "B"
+      ],
+      "pointed_targets": [
+        "A",
+        "B"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 6,
+      "motion_arrivals_total": 6,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "42873ec312b942adb3f282e2fd1103d7",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "91a58e865b954f7285b2b732e4178ae5",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "8a376dc809e1476390f9431e4e2dbdce",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_A",
+          "command_id": "667d6e670b9b46669f44f368f38dc2bf",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_A",
+          "to": "point_B",
+          "command_id": "c359dc9e73de4fba8119c9ded5dc008e",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_B",
+          "to": "home",
+          "command_id": "87059b20810f4c428e7f39358a8a6be6",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 106.295,
+      "runtime_elapsed_sec": 95.37112207908649,
+      "started_at_utc": "2026-10-27T02:22:29.388Z",
+      "finished_at_utc": "2026-10-27T02:24:15.683Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T022226Z_8d8173/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T022226Z_8d8173.json",
+      "runtime_manifest_sha256": "f2c122f89f8a79a32ce3ee37b5b7e8a2eedbe6196440b6dc1ed502e6fae8a86c",
+      "truth_record_sha256": "d33ad4c866278acf6fcc5b93e59034dd76846cb3c9cf075792544ac64fe7412e",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T022420Z_1b03b1",
+      "campaign": "eight_combinations",
+      "combination": "AAA",
+      "runtime_result": "FAIL",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "abnormal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": "abnormal",
+        "B": "abnormal",
+        "C": null
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": false
+      },
+      "image_correct_count": 2,
+      "image_total": 3,
+      "image_observed_count": 2,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "2acf960493b0b218b50c27aa9de32c451f02011c6372e447287cbb12a22b264f",
+          "received_at_utc": "2026-10-27T02:24:52.397Z",
+          "arrival_at_utc": "2026-10-27T02:24:47.278Z",
+          "image_header_stamp": {
+            "sec": 13610,
+            "nanosec": 700000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13606,
+            "nanosec": 153000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "cad0b9d3956023102503d0eecb379c8bed314ded86aafb9850a66c62e6e1d15a",
+          "received_at_utc": "2026-10-27T02:25:09.674Z",
+          "arrival_at_utc": "2026-10-27T02:25:04.274Z",
+          "image_header_stamp": {
+            "sec": 13626,
+            "nanosec": 0
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 13621,
+            "nanosec": 223000000
+          }
+        },
+        "C": {
+          "result": "FAIL",
+          "issues": [
+            "image or inference missing: indeterminate",
+            "prediction unavailable or invalid",
+            "capture and inference hashes differ or unavailable",
+            "observation arrival not confirmed",
+            "fresh capture timestamps missing",
+            "simulation image/JointState freshness timestamps missing or invalid"
+          ],
+          "image_sha256": null,
+          "received_at_utc": null,
+          "arrival_at_utc": null,
+          "image_header_stamp": {},
+          "arrival_joint_state_stamp": {}
+        }
+      },
+      "expected_targets": [
+        "A",
+        "B",
+        "C"
+      ],
+      "selected_targets": [],
+      "pointed_targets": [],
+      "selection_correct": false,
+      "pointing_correct": false,
+      "motion_arrivals_pass": 2,
+      "motion_arrivals_total": 3,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "5fbd9865eecb410ba9e59d077e66154e",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "b58804e08850496abf6b1d11d406f5f7",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "5e39e3f69a6a4a6680d0cbc23dfa18da",
+          "arrival_pass": false,
+          "publish_once": false
+        }
+      ],
+      "all_motion_arrivals": false,
+      "motion_sequence_correct": false,
+      "home_return": false,
+      "display_audit_pass": false,
+      "task_success": false,
+      "elapsed_sec": 53.841,
+      "runtime_elapsed_sec": 42.52970444399398,
+      "started_at_utc": "2026-10-27T02:24:23.968Z",
+      "finished_at_utc": "2026-10-27T02:25:17.809Z",
+      "abort_reason": "RuntimeError: Gazebo collision geometry/pose mismatch; no motion sent",
+      "issues": [
+        "runtime did not complete with PASS",
+        "C: image or inference missing: indeterminate",
+        "C: prediction unavailable or invalid",
+        "C: capture and inference hashes differ or unavailable",
+        "C: observation arrival not confirmed",
+        "C: fresh capture timestamps missing",
+        "C: simulation image/JointState freshness timestamps missing or invalid",
+        "selected abnormal target set incorrect or indeterminate",
+        "completed pointing sequence differs from expected A/B/C order",
+        "motion arrival failed: observe_C",
+        "motion was not sent exactly once: observe_C",
+        "motion sequence incomplete or differs from expected observed/pointed/home sequence",
+        "home return not confirmed",
+        "display hash/label audit missing, failed, or incomplete",
+        "one or more image labels incorrect or indeterminate"
+      ],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T022420Z_1b03b1/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T022420Z_1b03b1.json",
+      "runtime_manifest_sha256": "cc4baeb3ab8cbd2c9c16bf86b23671c183b637d1e39a928774fefb7f8d56c8a9",
+      "truth_record_sha256": "1f42a612e3c723fa898c0b5381c06cf06f166854c48bf8994932a58f7e87026d",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T022932Z_be2d41",
+      "campaign": "eight_combinations",
+      "combination": "AAA",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "abnormal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": "abnormal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "b25d2f7f082d27349ff1eb6c8116f365cc332f0d6a2f9af6503f13786ee83356",
+          "received_at_utc": "2026-10-27T02:30:00.813Z",
+          "arrival_at_utc": "2026-10-27T02:29:55.547Z",
+          "image_header_stamp": {
+            "sec": 68,
+            "nanosec": 500000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 63,
+            "nanosec": 687000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "8e2567742ca24ecae9d3c0ebba6be24d57557ab83a76d7220847d6105a5c2842",
+          "received_at_utc": "2026-10-27T02:30:16.916Z",
+          "arrival_at_utc": "2026-10-27T02:30:11.435Z",
+          "image_header_stamp": {
+            "sec": 83,
+            "nanosec": 200000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 78,
+            "nanosec": 207000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "acee00936df71c8c1b0a47ab47e47fff26f0e5607712b12a583ec544694b4fca",
+          "received_at_utc": "2026-10-27T02:30:32.242Z",
+          "arrival_at_utc": "2026-10-27T02:30:27.359Z",
+          "image_header_stamp": {
+            "sec": 97,
+            "nanosec": 200000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 92,
+            "nanosec": 757000000
+          }
+        }
+      },
+      "expected_targets": [
+        "A",
+        "B",
+        "C"
+      ],
+      "selected_targets": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pointed_targets": [
+        "A",
+        "B",
+        "C"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 7,
+      "motion_arrivals_total": 7,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "08037f9c00eb4ad8a0416a4959ff2ded",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "3a4d450aa6fb4871ab5c5370a3499e0f",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "a54008f0baf144dda1d05164ae49febf",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_A",
+          "command_id": "7e9c6b6ff11c4a2e8655c03d38f0217b",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_A",
+          "to": "point_B",
+          "command_id": "c68c4e58dfad40039fc197210e68d9b9",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_B",
+          "to": "point_C",
+          "command_id": "05ceab4b0611473da6fc769169f2e619",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_C",
+          "to": "home",
+          "command_id": "82bce0a8c1554e878a83503b2be81f75",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 117.446,
+      "runtime_elapsed_sec": 107.56803208705969,
+      "started_at_utc": "2026-10-27T02:29:34.848Z",
+      "finished_at_utc": "2026-10-27T02:31:32.294Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T022932Z_be2d41/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T022932Z_be2d41.json",
+      "runtime_manifest_sha256": "da5b45b36a67a92aae892654c7b8875caec39759e2c61850a7762f4319eae753",
+      "truth_record_sha256": "2f542558e08d61ff7526a5a371f7042ae73686725dae5dfeb7c92c7b9f16dcf2",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T023137Z_29c6e6",
+      "campaign": "held_out",
+      "combination": "NNN",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "normal",
+        "C": "normal"
+      },
+      "predictions": {
+        "A": "normal",
+        "B": "normal",
+        "C": "normal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "9d1607e801cdeb303cc728991156b60ff7d7cde259760c68831155d0e5064e34",
+          "received_at_utc": "2026-10-27T02:32:05.431Z",
+          "arrival_at_utc": "2026-10-27T02:32:00.435Z",
+          "image_header_stamp": {
+            "sec": 181,
+            "nanosec": 900000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 177,
+            "nanosec": 337000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "8d165e647c00f879c50c38de8d3cce20101b1074151633268541936275df8846",
+          "received_at_utc": "2026-10-27T02:32:24.770Z",
+          "arrival_at_utc": "2026-10-27T02:32:17.509Z",
+          "image_header_stamp": {
+            "sec": 199,
+            "nanosec": 500000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 192,
+            "nanosec": 847000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "8a4243dd8053e974c29bce463fd4ecae7aa3861237be6efe70bd05e8bf9e7b81",
+          "received_at_utc": "2026-10-27T02:32:41.203Z",
+          "arrival_at_utc": "2026-10-27T02:32:36.351Z",
+          "image_header_stamp": {
+            "sec": 214,
+            "nanosec": 400000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 210,
+            "nanosec": 7000000
+          }
+        }
+      },
+      "expected_targets": [],
+      "selected_targets": [],
+      "pointed_targets": [],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 4,
+      "motion_arrivals_total": 4,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "cdbb7217406d4d2a83473d2badf79bfc",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "edaf2d2c5b134b3a80f10cbef3034bc4",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "a1ed5d81795942399be55d07307de209",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "home",
+          "command_id": "e3062610fcc347949f1d8c4fda44e85c",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 77.306,
+      "runtime_elapsed_sec": 66.56192928808741,
+      "started_at_utc": "2026-10-27T02:31:39.902Z",
+      "finished_at_utc": "2026-10-27T02:32:57.208Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T023137Z_29c6e6/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T023137Z_29c6e6.json",
+      "runtime_manifest_sha256": "af2e3ed039f5fd99c5d0259c2001d96cc29fa73f9bee338afd9fa9c122572a4f",
+      "truth_record_sha256": "041519c7a103c6fbd4263c51863d2b2e36655598d4456566a00ee5ee3477d530",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T023301Z_5ecbe8",
+      "campaign": "held_out",
+      "combination": "AAA",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "abnormal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": "abnormal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "0804d9123d03857892924253018e37c55addaa2078a00dffb72b3ccf6046e593",
+          "received_at_utc": "2026-10-27T02:33:33.470Z",
+          "arrival_at_utc": "2026-10-27T02:33:26.337Z",
+          "image_header_stamp": {
+            "sec": 261,
+            "nanosec": 800000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 255,
+            "nanosec": 217000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "8b0a7aceac16121406171f811290a61391863c32318a7d167d256a85dacbbe12",
+          "received_at_utc": "2026-10-27T02:33:49.558Z",
+          "arrival_at_utc": "2026-10-27T02:33:44.587Z",
+          "image_header_stamp": {
+            "sec": 276,
+            "nanosec": 500000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 271,
+            "nanosec": 977000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "3e93fd7aa5ed55135af6c9978bcee567a9422bac4882cefe9fa00c37dcd14a9c",
+          "received_at_utc": "2026-10-27T02:34:05.940Z",
+          "arrival_at_utc": "2026-10-27T02:34:00.992Z",
+          "image_header_stamp": {
+            "sec": 291,
+            "nanosec": 400000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 286,
+            "nanosec": 917000000
+          }
+        }
+      },
+      "expected_targets": [
+        "A",
+        "B",
+        "C"
+      ],
+      "selected_targets": [
+        "A",
+        "B",
+        "C"
+      ],
+      "pointed_targets": [
+        "A",
+        "B",
+        "C"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 7,
+      "motion_arrivals_total": 7,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "c3bdec32edc04751929cb209e7ce6f91",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "a77ce2d64dc14c04b46186377748e187",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "ecd6e264a2f34bba8cb8e5c03851d670",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_A",
+          "command_id": "8fa71d0351d64c478f75cd4a889ea79c",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_A",
+          "to": "point_B",
+          "command_id": "6aae9876056a4d46a27921a06592fe87",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_B",
+          "to": "point_C",
+          "command_id": "ad0d50dd1d744d849fa21d458e777472",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_C",
+          "to": "home",
+          "command_id": "b1a3b599ccff409ead12669dca0436c2",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 123.151,
+      "runtime_elapsed_sec": 112.36586789693683,
+      "started_at_utc": "2026-10-27T02:33:04.803Z",
+      "finished_at_utc": "2026-10-27T02:35:07.954Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T023301Z_5ecbe8/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T023301Z_5ecbe8.json",
+      "runtime_manifest_sha256": "d47a6acff5597b8a9c20d29cd48eecf940eb4382faf4dc558975852391c9c4b2",
+      "truth_record_sha256": "998b1dc5bee496429994f0e073db53e603b010d83a9e376eb2ccdd32f17e27c0",
+      "group": "old16"
+    },
+    {
+      "run_id": "mg_20261027T081621Z_813352",
+      "campaign": "final_japanese_ui",
+      "combination": "NAN",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "normal"
+      },
+      "predictions": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "normal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "066c6d8fa115613b22faef47a7373a4e881e10b335fe1b255bf47aa4b1cf1893",
+          "received_at_utc": "2026-10-27T08:16:52.075Z",
+          "arrival_at_utc": "2026-10-27T08:16:46.432Z",
+          "image_header_stamp": {
+            "sec": 18382,
+            "nanosec": 100000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 18377,
+            "nanosec": 128000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "8e55a0d223c95ffae5c653295a117d4d9c23d69d6ffb773dd13bbd15b2da3ea2",
+          "received_at_utc": "2026-10-27T08:17:08.287Z",
+          "arrival_at_utc": "2026-10-27T08:17:02.992Z",
+          "image_header_stamp": {
+            "sec": 18396,
+            "nanosec": 400000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 18391,
+            "nanosec": 718000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "a22910f2e1e4453620371be0d809d1bc91569c2dff1632773b53c1186d01895f",
+          "received_at_utc": "2026-10-27T08:17:25.125Z",
+          "arrival_at_utc": "2026-10-27T08:17:19.658Z",
+          "image_header_stamp": {
+            "sec": 18411,
+            "nanosec": 300000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 18406,
+            "nanosec": 468000000
+          }
+        }
+      },
+      "expected_targets": [
+        "B"
+      ],
+      "selected_targets": [
+        "B"
+      ],
+      "pointed_targets": [
+        "B"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 5,
+      "motion_arrivals_total": 5,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "bf245608ff1345d88383940b3f95972b",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "44acb4d7cacc4ede9e00009d850594a5",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "79569d1132f247668a8a3a802bda884b",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_B",
+          "command_id": "3c2c91780b2f456f9db176c596743a85",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_B",
+          "to": "home",
+          "command_id": "54e6ce828aef43d588289a23f80eb456",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 88.873,
+      "runtime_elapsed_sec": 78.3989077230217,
+      "started_at_utc": "2026-10-27T08:16:25.275Z",
+      "finished_at_utc": "2026-10-27T08:17:54.148Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T081621Z_813352/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T081621Z_813352.json",
+      "runtime_manifest_sha256": "4dfb161b9099d71d9b89d854d7b9096f3d475768d25a90cfe2c16ed96db5e5d9",
+      "truth_record_sha256": "128f3ce1ce690f06cf1c7fc69a95a463da243e9f35b52edf95bb34d418e61ec3",
+      "group": "new_final_ui"
+    },
+    {
+      "run_id": "mg_20261027T081759Z_9a885d",
+      "campaign": "final_japanese_ui",
+      "combination": "NAA",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "predictions": {
+        "A": "normal",
+        "B": "abnormal",
+        "C": "abnormal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "c34d256be28f8b5d94d7ae008de94a16b6d5a855d74aea96763519ff0b856e76",
+          "received_at_utc": "2026-10-27T08:18:30.516Z",
+          "arrival_at_utc": "2026-10-27T08:18:25.039Z",
+          "image_header_stamp": {
+            "sec": 18469,
+            "nanosec": 100000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 18464,
+            "nanosec": 248000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "7d5e61549ee1a3543cb7f4f5d23181ce1b22e6457e12cbc77246e47022155f8b",
+          "received_at_utc": "2026-10-27T08:18:48.120Z",
+          "arrival_at_utc": "2026-10-27T08:18:42.873Z",
+          "image_header_stamp": {
+            "sec": 18484,
+            "nanosec": 800000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 18480,
+            "nanosec": 108000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "8479c12645a2aaa0fec94bcd656a4655d5e2186dff55fbce90e78b4d43669154",
+          "received_at_utc": "2026-10-27T08:19:05.564Z",
+          "arrival_at_utc": "2026-10-27T08:19:00.121Z",
+          "image_header_stamp": {
+            "sec": 18500,
+            "nanosec": 300000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 18495,
+            "nanosec": 468000000
+          }
+        }
+      },
+      "expected_targets": [
+        "B",
+        "C"
+      ],
+      "selected_targets": [
+        "B",
+        "C"
+      ],
+      "pointed_targets": [
+        "B",
+        "C"
+      ],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 6,
+      "motion_arrivals_total": 6,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "22ac55affcd04a1cb8dd94a60b53612a",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "055fbcf521f740a49c11ae1a82925efb",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "81ad00ba85544c9ca2c72220ed54114c",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "point_B",
+          "command_id": "3d35680853cd49bcb911568cbf151e12",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_B",
+          "to": "point_C",
+          "command_id": "1270db9893ba41eb87f612f2bbcc060e",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "point_C",
+          "to": "home",
+          "command_id": "98c8333276344d418b7a956717f5cc2c",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 103.085,
+      "runtime_elapsed_sec": 90.72344078193419,
+      "started_at_utc": "2026-10-27T08:18:02.809Z",
+      "finished_at_utc": "2026-10-27T08:19:45.894Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T081759Z_9a885d/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T081759Z_9a885d.json",
+      "runtime_manifest_sha256": "b35caaeb63947f2e38127bbe6425c0abaa2914ec9885f79c11fda0b8ff2e0231",
+      "truth_record_sha256": "b61f0189dd5f760ffeba82401ba66af7552933ba4beb2d63adf411eb14ca0f28",
+      "group": "new_final_ui"
+    },
+    {
+      "run_id": "mg_20261027T081951Z_e109f6",
+      "campaign": "final_japanese_ui",
+      "combination": "NNN",
+      "runtime_result": "PASS",
+      "preparation_result": "PREPARED",
+      "truth_labels": {
+        "A": "normal",
+        "B": "normal",
+        "C": "normal"
+      },
+      "predictions": {
+        "A": "normal",
+        "B": "normal",
+        "C": "normal"
+      },
+      "image_correct": {
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "image_correct_count": 3,
+      "image_total": 3,
+      "image_observed_count": 3,
+      "image_audit": {
+        "A": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "66c1738804074147921f2d0c7c259edaa442dc1e9dd63d702cb3e67cbc7cd17d",
+          "received_at_utc": "2026-10-27T08:20:22.660Z",
+          "arrival_at_utc": "2026-10-27T08:20:16.912Z",
+          "image_header_stamp": {
+            "sec": 18568,
+            "nanosec": 600000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 18563,
+            "nanosec": 488000000
+          }
+        },
+        "B": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "b5379f3a19186f28d25216960708c62630a5cb6d144935064b0de254aa1ff2a2",
+          "received_at_utc": "2026-10-27T08:20:38.986Z",
+          "arrival_at_utc": "2026-10-27T08:20:33.579Z",
+          "image_header_stamp": {
+            "sec": 18583,
+            "nanosec": 100000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 18578,
+            "nanosec": 308000000
+          }
+        },
+        "C": {
+          "result": "PASS",
+          "issues": [],
+          "image_sha256": "b5a132748f3378bb89f456c0c45be285f6829084a6db868a904c41521bb23c9b",
+          "received_at_utc": "2026-10-27T08:20:56.744Z",
+          "arrival_at_utc": "2026-10-27T08:20:51.469Z",
+          "image_header_stamp": {
+            "sec": 18598,
+            "nanosec": 800000000
+          },
+          "arrival_joint_state_stamp": {
+            "sec": 18594,
+            "nanosec": 118000000
+          }
+        }
+      },
+      "expected_targets": [],
+      "selected_targets": [],
+      "pointed_targets": [],
+      "selection_correct": true,
+      "pointing_correct": true,
+      "motion_arrivals_pass": 4,
+      "motion_arrivals_total": 4,
+      "motions": [
+        {
+          "from": "home",
+          "to": "observe_A",
+          "command_id": "8fadf54bc9aa4cf98d1c49588c85973d",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_A",
+          "to": "observe_B",
+          "command_id": "e1e54805fb704747a9a1d4965bf825b8",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_B",
+          "to": "observe_C",
+          "command_id": "3d83c115d4534ef6b072132e3fcbabab",
+          "arrival_pass": true,
+          "publish_once": true
+        },
+        {
+          "from": "observe_C",
+          "to": "home",
+          "command_id": "0fb9d671ec3746d5b342fade51f69eda",
+          "arrival_pass": true,
+          "publish_once": true
+        }
+      ],
+      "all_motion_arrivals": true,
+      "motion_sequence_correct": true,
+      "home_return": true,
+      "display_audit_pass": true,
+      "task_success": true,
+      "elapsed_sec": 78.722,
+      "runtime_elapsed_sec": 67.04830811498687,
+      "started_at_utc": "2026-10-27T08:19:54.563Z",
+      "finished_at_utc": "2026-10-27T08:21:13.285Z",
+      "abort_reason": null,
+      "issues": [],
+      "runtime_manifest": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/run_manifest.json",
+      "truth_record": "/home/ubuntu/multigauge/results/truth/mg_20261027T081951Z_e109f6.json",
+      "runtime_manifest_sha256": "9e4d9f9d98602bb8bc8e50c2d3950c4ec80641425f297a3aee5ffa4437ca4f8b",
+      "truth_record_sha256": "34ed5e9d09e0b32fd5fcf982a7e5f7268bbac4e97eb33dece49594937d19accf",
+      "group": "new_final_ui"
+    }
+  ],
+  "infrastructure_attempts": [
+    {
+      "run_id": "mg_20261026T221047Z_f56a10",
+      "classification": "INFRASTRUCTURE_BEFORE_TARGET_PREPARATION",
+      "included_in_trial_denominator": false,
+      "reason": "No target preparation or runtime manifest; retained separately.",
+      "final_state": {
+        "run_id": "mg_20261026T221047Z_f56a10",
+        "result": "FAIL",
+        "elapsed_sec": 0.9248037179931998,
+        "recording": "/home/ubuntu/multigauge/results/runs/mg_20261026T221047Z_f56a10/screen.mp4"
+      },
+      "error": "CalledProcessError: Command '['git', '-C', '/home/ubuntu', 'rev-parse', 'HEAD']' returned non-zero exit status 128.",
+      "run_directory": "/home/ubuntu/multigauge/results/runs/mg_20261026T221047Z_f56a10"
+    }
+  ],
+  "replay": {
+    "result": "PASS",
+    "scope": "Offline archived-image inference only, using each exact source/model/config snapshot in a fresh temporary directory. No ROS commands, scene reconstruction or simulator determinism claim.",
+    "legacy_success_only_images": 33,
+    "legacy_filter_evidence": {
+      "program": "/home/ubuntu/multigauge/replay.py",
+      "sha256": "982df2355cca82be53996e7a74e63ad584e2a676294ddbf1d9bc32812e7ae315",
+      "source_predicate": "if run['result']!='PASS':continue",
+      "legacy_report_sha256": "d506220f12106307335758d06c3f56dad6361bd8843adf1109927be504b135c1"
+    },
+    "old_observed_images": 35,
+    "old_failed_run_images": 2,
+    "legacy_difference": [
+      {
+        "run_id": "mg_20261027T022420Z_1b03b1",
+        "target_id": "A",
+        "image_sha256": "2acf960493b0b218b50c27aa9de32c451f02011c6372e447287cbb12a22b264f"
+      },
+      {
+        "run_id": "mg_20261027T022420Z_1b03b1",
+        "target_id": "B",
+        "image_sha256": "cad0b9d3956023102503d0eecb379c8bed314ded86aafb9850a66c62e6e1d15a"
+      }
+    ],
+    "all_observed_replayed_images": 44,
+    "replayed_runs": 15,
+    "runs": [
+      {
+        "run_id": "mg_20261026T221606Z_99f978",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "normal",
+            "image_sha256": "07af61722b8083c8cb10073cc47beed5e42e8db2d31f3d873d604841aa4a4bc7",
+            "svm_raw_margin": 1.0263543128967285,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "abnormal",
+            "image_sha256": "1aa5a19b83dd19ae29b2f82044adcff77ba81d63eb698b8144da0d63c5c26e7b",
+            "svm_raw_margin": -1.023194432258606,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "abnormal",
+            "image_sha256": "8f97782ccbc0342b83365e9f1649798a7c236682264b0bb7ca6de0655e094d36",
+            "svm_raw_margin": -1.0499757528305054,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T021158Z_5fdbf8",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "normal",
+            "image_sha256": "cf58bf5f3b488e80e68689d68aacf98cd282399af3429f6c7f033d4130a59004",
+            "svm_raw_margin": 1.024552583694458,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "normal",
+            "image_sha256": "8b72df6a7e26eeb6962d53dc53642fa1409a11d97b8c711fd37233e800b86076",
+            "svm_raw_margin": 1.02566397190094,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "normal",
+            "image_sha256": "cf6433a62d19408ed41c56d952d3f382dee0a982e67c66f126a999be9a4f07ab",
+            "svm_raw_margin": 1.0259029865264893,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T021324Z_cb3f78",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "normal",
+            "image_sha256": "7558951d6fe4a6011a67487947b84c15961e4b9d373c56aa29c75103ea1a2e76",
+            "svm_raw_margin": 1.0224539041519165,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "normal",
+            "image_sha256": "1c888ab2c46b35a7c8f0c0b5bbbff5cdf193315e2e7dab79e67aebfd95466fc4",
+            "svm_raw_margin": 1.0262516736984253,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "abnormal",
+            "image_sha256": "7e1c5d9e3f2e762ca1ba74a07491ec31701b3f9b073be98d45836f2bc3fd09d2",
+            "svm_raw_margin": -1.0315455198287964,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T021505Z_8ac959",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "normal",
+            "image_sha256": "eeabb566ad13b741ba9d6edb66710e8bd4f34a150db752e68032da20e873f405",
+            "svm_raw_margin": 1.0261133909225464,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "abnormal",
+            "image_sha256": "090fb792dae95868fc1fe1cf5da01082e7acc09222d916dc309dd1bbf2c9dc76",
+            "svm_raw_margin": -1.0454986095428467,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "normal",
+            "image_sha256": "32d5bd33d0c9beaebd7464cb3991d2ae1e92033cd6dadc86fbcf3ddd4651e688",
+            "svm_raw_margin": 1.0258994102478027,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T021643Z_953199",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "normal",
+            "image_sha256": "35caef6c1ca1ebe8e4fb54df04b56ea8ede15217c9aacfda2633da1171d7767b",
+            "svm_raw_margin": 1.0227781534194946,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "abnormal",
+            "image_sha256": "89ecd00a708cc47cca32e62b1c879547b85190f23431e5c51bef7d736d25c26e",
+            "svm_raw_margin": -1.0215164422988892,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "abnormal",
+            "image_sha256": "758c387f8bd600e3e7f23775a263385d26b58269bb60462a6112be4802833fae",
+            "svm_raw_margin": -1.031675100326538,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T021835Z_6edf7a",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "abnormal",
+            "image_sha256": "833c105dae63b69b237778d3bae0ceccdfdfab5db4b5647d970208700a301429",
+            "svm_raw_margin": -1.0120031833648682,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "normal",
+            "image_sha256": "9a958a3c1fcfe3d370fdd8af1f6dea20b05b328282014ad173afd92c7d5497c4",
+            "svm_raw_margin": 1.0258817672729492,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "normal",
+            "image_sha256": "6afd77c7e79185d08a0831cf052d149d84dc74bd8a7569399b075ea56339aa4e",
+            "svm_raw_margin": 1.024336338043213,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T022021Z_85a93f",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "abnormal",
+            "image_sha256": "60e4b3ffd969b5274c4099361d632155c053ef08cbcd30fdebbc06c9af9717a5",
+            "svm_raw_margin": -1.0128819942474365,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "normal",
+            "image_sha256": "19a2def9b3c920b99126d0ee5bb5a55a717a9a4aba0ed23873c4a5f0945d68a8",
+            "svm_raw_margin": 1.021202564239502,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "abnormal",
+            "image_sha256": "67bbff13e4456f858aa63e5f616109efc6f2f1ff06102a4f5135110bc8c7c49a",
+            "svm_raw_margin": -1.0482101440429688,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T022226Z_8d8173",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "abnormal",
+            "image_sha256": "bf1c2950339ca6f1019b9dfd3a30f4043fc7df9cbc07171a79b1ad93f6246ee7",
+            "svm_raw_margin": -1.0298341512680054,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "abnormal",
+            "image_sha256": "6bbed8838b18deca5ddfc765bee25103a68c72928670b41c4f802bdca3b4d815",
+            "svm_raw_margin": -1.0424741506576538,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "normal",
+            "image_sha256": "a85c1a940d70cb83a17b11a62f64e4ca14f9b6c2b253f98223ccf068ce15dd98",
+            "svm_raw_margin": 1.0280531644821167,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T022420Z_1b03b1",
+        "group": "old16",
+        "runtime_result": "FAIL",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "abnormal",
+            "image_sha256": "2acf960493b0b218b50c27aa9de32c451f02011c6372e447287cbb12a22b264f",
+            "svm_raw_margin": -1.0164483785629272,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "abnormal",
+            "image_sha256": "cad0b9d3956023102503d0eecb379c8bed314ded86aafb9850a66c62e6e1d15a",
+            "svm_raw_margin": -1.0240637063980103,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T022932Z_be2d41",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "abnormal",
+            "image_sha256": "b25d2f7f082d27349ff1eb6c8116f365cc332f0d6a2f9af6503f13786ee83356",
+            "svm_raw_margin": -1.0134469270706177,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "abnormal",
+            "image_sha256": "8e2567742ca24ecae9d3c0ebba6be24d57557ab83a76d7220847d6105a5c2842",
+            "svm_raw_margin": -1.0475212335586548,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "abnormal",
+            "image_sha256": "acee00936df71c8c1b0a47ab47e47fff26f0e5607712b12a583ec544694b4fca",
+            "svm_raw_margin": -1.0285214185714722,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T023137Z_29c6e6",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "normal",
+            "image_sha256": "9d1607e801cdeb303cc728991156b60ff7d7cde259760c68831155d0e5064e34",
+            "svm_raw_margin": 0.9489439725875854,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "normal",
+            "image_sha256": "8d165e647c00f879c50c38de8d3cce20101b1074151633268541936275df8846",
+            "svm_raw_margin": 0.9588383436203003,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "normal",
+            "image_sha256": "8a4243dd8053e974c29bce463fd4ecae7aa3861237be6efe70bd05e8bf9e7b81",
+            "svm_raw_margin": 0.9582314491271973,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T023301Z_5ecbe8",
+        "group": "old16",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "abnormal",
+            "image_sha256": "0804d9123d03857892924253018e37c55addaa2078a00dffb72b3ccf6046e593",
+            "svm_raw_margin": -1.0099666118621826,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "abnormal",
+            "image_sha256": "8b0a7aceac16121406171f811290a61391863c32318a7d167d256a85dacbbe12",
+            "svm_raw_margin": -1.0184904336929321,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "abnormal",
+            "image_sha256": "3e93fd7aa5ed55135af6c9978bcee567a9422bac4882cefe9fa00c37dcd14a9c",
+            "svm_raw_margin": -1.0184873342514038,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T081621Z_813352",
+        "group": "new_final_ui",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "normal",
+            "image_sha256": "066c6d8fa115613b22faef47a7373a4e881e10b335fe1b255bf47aa4b1cf1893",
+            "svm_raw_margin": 1.0223174095153809,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "abnormal",
+            "image_sha256": "8e55a0d223c95ffae5c653295a117d4d9c23d69d6ffb773dd13bbd15b2da3ea2",
+            "svm_raw_margin": -1.0457689762115479,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "normal",
+            "image_sha256": "a22910f2e1e4453620371be0d809d1bc91569c2dff1632773b53c1186d01895f",
+            "svm_raw_margin": 1.0229798555374146,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T081759Z_9a885d",
+        "group": "new_final_ui",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "normal",
+            "image_sha256": "c34d256be28f8b5d94d7ae008de94a16b6d5a855d74aea96763519ff0b856e76",
+            "svm_raw_margin": 1.020159363746643,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "abnormal",
+            "image_sha256": "7d5e61549ee1a3543cb7f4f5d23181ce1b22e6457e12cbc77246e47022155f8b",
+            "svm_raw_margin": -1.0343519449234009,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "abnormal",
+            "image_sha256": "8479c12645a2aaa0fec94bcd656a4655d5e2186dff55fbce90e78b4d43669154",
+            "svm_raw_margin": -1.0496207475662231,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      },
+      {
+        "run_id": "mg_20261027T081951Z_e109f6",
+        "group": "new_final_ui",
+        "runtime_result": "PASS",
+        "result": "PASS",
+        "archived_source_hash_verified": true,
+        "checks": [
+          {
+            "target_id": "A",
+            "label": "normal",
+            "image_sha256": "66c1738804074147921f2d0c7c259edaa442dc1e9dd63d702cb3e67cbc7cd17d",
+            "svm_raw_margin": 1.0260084867477417,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "B",
+            "label": "normal",
+            "image_sha256": "b5379f3a19186f28d25216960708c62630a5cb6d144935064b0de254aa1ff2a2",
+            "svm_raw_margin": 1.0229741334915161,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          },
+          {
+            "target_id": "C",
+            "label": "normal",
+            "image_sha256": "b5a132748f3378bb89f456c0c45be285f6829084a6db868a904c41521bb23c9b",
+            "svm_raw_margin": 1.022312045097351,
+            "exact_fields": [
+              "label",
+              "image_sha256",
+              "svm_raw_margin",
+              "preprocessing_sha256",
+              "model_sha256",
+              "quality"
+            ],
+            "result": "PASS"
+          }
+        ]
+      }
+    ]
+  },
+  "failed_AAA": {
+    "run_id": "mg_20261027T022420Z_1b03b1",
+    "geometry_error": "could not parse Gazebo world SDF safely",
+    "geometry_elapsed_sec": 5.13931206590496,
+    "observe_C_publish_count": 0,
+    "interpretation": "形状照合の前段取得・解析で停止。C軌道は未送信。原因の確定は未了。"
+  },
+  "limits": [
+    "既知姿勢・合成盤面・有限のGazebo条件。実機故障や一般環境の分類性能は未検証。",
+    "追加3試行は日本語UI確認。動作・推論契約を保持し、全8条件の再実行はしていない。",
+    "再現は保存画像の推論と資産一致。物理シミュレーションの完全な決定論的再現を主張しない。"
+  ]
+}

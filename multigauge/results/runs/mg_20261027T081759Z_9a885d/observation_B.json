@@ -1,0 +1,19 @@
+{
+  "topic": "/inspection_camera/image",
+  "subscription_started_at_utc": "2026-10-27T08:18:47.973Z",
+  "received_at_utc": "2026-10-27T08:18:48.120Z",
+  "header_stamp": {
+    "sec": 18484,
+    "nanosec": 800000000
+  },
+  "source_encoding": "rgb8",
+  "saved_encoding": "BGR8 PNG",
+  "shape_hwc": [
+    480,
+    640,
+    3
+  ],
+  "pixel_std": 41.325781603042444,
+  "image_sha256": "7d5e61549ee1a3543cb7f4f5d23181ce1b22e6457e12cbc77246e47022155f8b",
+  "image_path": "/home/ubuntu/multigauge/results/runs/mg_20261027T081759Z_9a885d/observation_B.png"
+}

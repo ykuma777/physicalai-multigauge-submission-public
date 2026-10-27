@@ -1,0 +1,4241 @@
+{
+  "run_id": "mg_20261027T081951Z_e109f6",
+  "started_at_utc": "2026-10-27T08:20:06.239Z",
+  "finished_at_utc": "2026-10-27T08:21:13.285Z",
+  "elapsed_sec": 67.04830811498687,
+  "result": "PASS",
+  "targets": {
+    "A": {
+      "status": "COMPLETE",
+      "image": {
+        "topic": "/inspection_camera/image",
+        "subscription_started_at_utc": "2026-10-27T08:20:22.340Z",
+        "received_at_utc": "2026-10-27T08:20:22.660Z",
+        "header_stamp": {
+          "sec": 18568,
+          "nanosec": 600000000
+        },
+        "source_encoding": "rgb8",
+        "saved_encoding": "BGR8 PNG",
+        "shape_hwc": [
+          480,
+          640,
+          3
+        ],
+        "pixel_std": 42.44154389785801,
+        "image_sha256": "66c1738804074147921f2d0c7c259edaa442dc1e9dd63d702cb3e67cbc7cd17d",
+        "image_path": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/observation_A.png"
+      },
+      "inference": {
+        "label": "normal",
+        "image_sha256": "66c1738804074147921f2d0c7c259edaa442dc1e9dd63d702cb3e67cbc7cd17d",
+        "input_image": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/observation_A.png",
+        "model_sha256": "dc3192f77dbeb47af9007853dbff516758ac8d6569ce52a98560ae1009a2ea9b",
+        "model_version": "grayscale_hog_linear_svm_v1",
+        "runtime_config_sha256": "7f36fd0fbc9d47ae21cf9fb076f5be5187f5af0bb3cda4a34dfb0d30fdb613e7",
+        "preprocessing_sha256": "6d3b22f8d57502373cb0a09b1c199b787165b0dfc4351bac82df895920a2548d",
+        "preprocessing_contract": {
+          "schema_version": 1,
+          "settings": {
+            "image_width": 640,
+            "image_height": 480,
+            "roi_center_xy": [
+              320,
+              310
+            ],
+            "roi_size_px": 192,
+            "resize_px": 128,
+            "hog_win_size_px": 128,
+            "minimum_model_margin": 0.0
+          },
+          "decoder": "OpenCV IMREAD_COLOR BGR8",
+          "grayscale": "COLOR_BGR2GRAY",
+          "resize_interpolation": "INTER_LINEAR",
+          "hog": {
+            "block": [
+              16,
+              16
+            ],
+            "block_stride": [
+              8,
+              8
+            ],
+            "cell": [
+              8,
+              8
+            ],
+            "bins": 9,
+            "gamma_correction": false
+          },
+          "quality": {
+            "minimum_roi_std": 8.0,
+            "canny_thresholds": [
+              40,
+              120
+            ],
+            "minimum_canny_edges": 80
+          }
+        },
+        "quality": {
+          "result": "PASS",
+          "roi_std": 40.516975255973854,
+          "roi_canny_edges": 852,
+          "roi_bounds_xyxy": [
+            224,
+            214,
+            416,
+            406
+          ],
+          "resized_shape": [
+            128,
+            128
+          ]
+        },
+        "svm_raw_margin": 1.0260084867477417,
+        "svm_margin_semantics": "uncalibrated signed SVM decision value; not probability or anomaly score",
+        "opencv_version": "4.5.4",
+        "numpy_version": "1.24.4"
+      },
+      "arrival": {
+        "result": "PASS",
+        "at_utc": "2026-10-27T08:20:16.912Z",
+        "actual_positions": [
+          -0.6197965276784977,
+          0.4293333468930612,
+          -0.11868525002273873,
+          -0.07217230469423651
+        ],
+        "errors_rad": [
+          0.0002034723215023071,
+          -0.00013017582841412523,
+          5.291212049879368e-05,
+          -7.696765895029434e-05
+        ],
+        "joint_state_header": {
+          "stamp": {
+            "sec": 18563,
+            "nanosec": 488000000
+          },
+          "frame_id": ""
+        },
+        "fresh_samples_after_send": 721,
+        "stable_samples": 26
+      }
+    },
+    "B": {
+      "status": "COMPLETE",
+      "image": {
+        "topic": "/inspection_camera/image",
+        "subscription_started_at_utc": "2026-10-27T08:20:38.736Z",
+        "received_at_utc": "2026-10-27T08:20:38.986Z",
+        "header_stamp": {
+          "sec": 18583,
+          "nanosec": 100000000
+        },
+        "source_encoding": "rgb8",
+        "saved_encoding": "BGR8 PNG",
+        "shape_hwc": [
+          480,
+          640,
+          3
+        ],
+        "pixel_std": 41.14745952244992,
+        "image_sha256": "b5379f3a19186f28d25216960708c62630a5cb6d144935064b0de254aa1ff2a2",
+        "image_path": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/observation_B.png"
+      },
+      "inference": {
+        "label": "normal",
+        "image_sha256": "b5379f3a19186f28d25216960708c62630a5cb6d144935064b0de254aa1ff2a2",
+        "input_image": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/observation_B.png",
+        "model_sha256": "dc3192f77dbeb47af9007853dbff516758ac8d6569ce52a98560ae1009a2ea9b",
+        "model_version": "grayscale_hog_linear_svm_v1",
+        "runtime_config_sha256": "7f36fd0fbc9d47ae21cf9fb076f5be5187f5af0bb3cda4a34dfb0d30fdb613e7",
+        "preprocessing_sha256": "6d3b22f8d57502373cb0a09b1c199b787165b0dfc4351bac82df895920a2548d",
+        "preprocessing_contract": {
+          "schema_version": 1,
+          "settings": {
+            "image_width": 640,
+            "image_height": 480,
+            "roi_center_xy": [
+              320,
+              310
+            ],
+            "roi_size_px": 192,
+            "resize_px": 128,
+            "hog_win_size_px": 128,
+            "minimum_model_margin": 0.0
+          },
+          "decoder": "OpenCV IMREAD_COLOR BGR8",
+          "grayscale": "COLOR_BGR2GRAY",
+          "resize_interpolation": "INTER_LINEAR",
+          "hog": {
+            "block": [
+              16,
+              16
+            ],
+            "block_stride": [
+              8,
+              8
+            ],
+            "cell": [
+              8,
+              8
+            ],
+            "bins": 9,
+            "gamma_correction": false
+          },
+          "quality": {
+            "minimum_roi_std": 8.0,
+            "canny_thresholds": [
+              40,
+              120
+            ],
+            "minimum_canny_edges": 80
+          }
+        },
+        "quality": {
+          "result": "PASS",
+          "roi_std": 40.50172100928685,
+          "roi_canny_edges": 1001,
+          "roi_bounds_xyxy": [
+            224,
+            214,
+            416,
+            406
+          ],
+          "resized_shape": [
+            128,
+            128
+          ]
+        },
+        "svm_raw_margin": 1.0229741334915161,
+        "svm_margin_semantics": "uncalibrated signed SVM decision value; not probability or anomaly score",
+        "opencv_version": "4.5.4",
+        "numpy_version": "1.24.4"
+      },
+      "arrival": {
+        "result": "PASS",
+        "at_utc": "2026-10-27T08:20:33.579Z",
+        "actual_positions": [
+          -0.00012631290143600628,
+          0.42945365758280196,
+          -0.1187204873995237,
+          -0.07216646343125893
+        ],
+        "errors_rad": [
+          -0.00012631290143600628,
+          -9.865138673348373e-06,
+          1.767474371382194e-05,
+          -7.112639597271764e-05
+        ],
+        "joint_state_header": {
+          "stamp": {
+            "sec": 18578,
+            "nanosec": 308000000
+          },
+          "frame_id": ""
+        },
+        "fresh_samples_after_send": 645,
+        "stable_samples": 26
+      }
+    },
+    "C": {
+      "status": "COMPLETE",
+      "image": {
+        "topic": "/inspection_camera/image",
+        "subscription_started_at_utc": "2026-10-27T08:20:56.565Z",
+        "received_at_utc": "2026-10-27T08:20:56.744Z",
+        "header_stamp": {
+          "sec": 18598,
+          "nanosec": 800000000
+        },
+        "source_encoding": "rgb8",
+        "saved_encoding": "BGR8 PNG",
+        "shape_hwc": [
+          480,
+          640,
+          3
+        ],
+        "pixel_std": 42.86208541553621,
+        "image_sha256": "b5a132748f3378bb89f456c0c45be285f6829084a6db868a904c41521bb23c9b",
+        "image_path": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/observation_C.png"
+      },
+      "inference": {
+        "label": "normal",
+        "image_sha256": "b5a132748f3378bb89f456c0c45be285f6829084a6db868a904c41521bb23c9b",
+        "input_image": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/observation_C.png",
+        "model_sha256": "dc3192f77dbeb47af9007853dbff516758ac8d6569ce52a98560ae1009a2ea9b",
+        "model_version": "grayscale_hog_linear_svm_v1",
+        "runtime_config_sha256": "7f36fd0fbc9d47ae21cf9fb076f5be5187f5af0bb3cda4a34dfb0d30fdb613e7",
+        "preprocessing_sha256": "6d3b22f8d57502373cb0a09b1c199b787165b0dfc4351bac82df895920a2548d",
+        "preprocessing_contract": {
+          "schema_version": 1,
+          "settings": {
+            "image_width": 640,
+            "image_height": 480,
+            "roi_center_xy": [
+              320,
+              310
+            ],
+            "roi_size_px": 192,
+            "resize_px": 128,
+            "hog_win_size_px": 128,
+            "minimum_model_margin": 0.0
+          },
+          "decoder": "OpenCV IMREAD_COLOR BGR8",
+          "grayscale": "COLOR_BGR2GRAY",
+          "resize_interpolation": "INTER_LINEAR",
+          "hog": {
+            "block": [
+              16,
+              16
+            ],
+            "block_stride": [
+              8,
+              8
+            ],
+            "cell": [
+              8,
+              8
+            ],
+            "bins": 9,
+            "gamma_correction": false
+          },
+          "quality": {
+            "minimum_roi_std": 8.0,
+            "canny_thresholds": [
+              40,
+              120
+            ],
+            "minimum_canny_edges": 80
+          }
+        },
+        "quality": {
+          "result": "PASS",
+          "roi_std": 40.56438858306825,
+          "roi_canny_edges": 953,
+          "roi_bounds_xyxy": [
+            224,
+            214,
+            416,
+            406
+          ],
+          "resized_shape": [
+            128,
+            128
+          ]
+        },
+        "svm_raw_margin": 1.022312045097351,
+        "svm_margin_semantics": "uncalibrated signed SVM decision value; not probability or anomaly score",
+        "opencv_version": "4.5.4",
+        "numpy_version": "1.24.4"
+      },
+      "arrival": {
+        "result": "PASS",
+        "at_utc": "2026-10-27T08:20:51.469Z",
+        "actual_positions": [
+          0.6199389437987689,
+          0.42949472223512436,
+          -0.11867966961402684,
+          -0.07201943430803127
+        ],
+        "errors_rad": [
+          -6.105620123109112e-05,
+          3.119951364904949e-05,
+          5.849252921068249e-05,
+          7.590272725493952e-05
+        ],
+        "joint_state_header": {
+          "stamp": {
+            "sec": 18594,
+            "nanosec": 118000000
+          },
+          "frame_id": ""
+        },
+        "fresh_samples_after_send": 784,
+        "stable_samples": 26
+      }
+    }
+  },
+  "selected_targets": [],
+  "pointed_targets": [],
+  "motions": [
+    {
+      "from": "home",
+      "to": "observe_A",
+      "command_id": "8fadf54bc9aa4cf98d1c49588c85973d",
+      "publish_count": 1,
+      "arrival": {
+        "result": "PASS",
+        "at_utc": "2026-10-27T08:20:16.912Z",
+        "actual_positions": [
+          -0.6197965276784977,
+          0.4293333468930612,
+          -0.11868525002273873,
+          -0.07217230469423651
+        ],
+        "errors_rad": [
+          0.0002034723215023071,
+          -0.00013017582841412523,
+          5.291212049879368e-05,
+          -7.696765895029434e-05
+        ],
+        "joint_state_header": {
+          "stamp": {
+            "sec": 18563,
+            "nanosec": 488000000
+          },
+          "frame_id": ""
+        },
+        "fresh_samples_after_send": 721,
+        "stable_samples": 26
+      },
+      "started_at_utc": "2026-10-27T08:20:06.921Z",
+      "geometry_report": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/geometry_01.json",
+      "geometry_command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/multigauge/geometry_check.py",
+        "--report",
+        "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/geometry_01.json"
+      ],
+      "trajectory": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "joint_names": [
+          "crane_plus_joint1",
+          "crane_plus_joint2",
+          "crane_plus_joint3",
+          "crane_plus_joint4"
+        ],
+        "points": [
+          {
+            "positions": [
+              8.624784871936329e-05,
+              2.1373553075751203e-05,
+              1.563138733283653e-06,
+              4.4227299741191776e-05
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              8.624784871936329e-05,
+              2.1373553075751203e-05,
+              1.563138733283653e-06,
+              4.4227299741191776e-05
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              -0.004913752151280621,
+              0.003484221613059734,
+              -0.0009557695855327255,
+              -0.0005382742234624029
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              -0.019913752151280564,
+              0.013872765793011678,
+              -0.003827767758330751,
+              -0.002285778793073186
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              -0.03241375215128052,
+              0.02252988594297163,
+              -0.006221099568995773,
+              -0.003742032601082172
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              -0.044913752151280475,
+              0.031187006092931582,
+              -0.008614431379660795,
+              -0.005198286409091158
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              -0.05491375215128068,
+              0.03811270221289971,
+              -0.010529096828192858,
+              -0.006363289455498375
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              -0.06491375215128088,
+              0.04503839833286783,
+              -0.01244376227672492,
+              -0.007528292501905592
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              -0.07491375215128109,
+              0.05196409445283596,
+              -0.014358427725256983,
+              -0.008693295548312809
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              -0.08491375215128134,
+              0.05888979057280413,
+              -0.016273093173789055,
+              -0.009858298594720032
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              -0.09491375215128162,
+              0.06581548669277229,
+              -0.01818775862232113,
+              -0.011023301641127255
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              -0.10491375215128187,
+              0.07274118281274046,
+              -0.020102424070853202,
+              -0.012188304687534478
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              -0.11991375215128146,
+              0.08312972699269217,
+              -0.02297442224365116,
+              -0.01393580925714522
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              -0.13491375215128104,
+              0.09351827117264386,
+              -0.025846420416449117,
+              -0.015683313826755963
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              -0.1499137521512806,
+              0.10390681535259554,
+              -0.02871841858924707,
+              -0.0174308183963667
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              -0.16491375215128018,
+              0.11429535953254721,
+              -0.03159041676204502,
+              -0.019178322965977438
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              -0.17991375215127975,
+              0.12468390371249889,
+              -0.03446241493484297,
+              -0.02092582753558818
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              -0.19491375215127932,
+              0.13507244789245057,
+              -0.03733441310764092,
+              -0.022673332105198916
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              -0.2049137521512796,
+              0.14199814401241875,
+              -0.039249078556173,
+              -0.023838335151606143
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              -0.21491375215127992,
+              0.14892384013238694,
+              -0.04116374400470508,
+              -0.02500333819801337
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              -0.2249137521512802,
+              0.15584953625235512,
+              -0.04307840945323716,
+              -0.026168341244420596
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              -0.23491375215128066,
+              0.16277523237232341,
+              -0.04499307490176927,
+              -0.027333344290827843
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              -0.24491375215128108,
+              0.1697009284922917,
+              -0.04690774035030138,
+              -0.028498347337235087
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              -0.25491375215128154,
+              0.17662662461226,
+              -0.04882240579883349,
+              -0.029663350383642335
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              -0.26991375215128055,
+              0.1870151687922113,
+              -0.051694403971631345,
+              -0.03141085495325301
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              -0.2849137521512796,
+              0.19740371297216264,
+              -0.054566402144429205,
+              -0.03315835952286369
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              -0.2999137521512787,
+              0.20779225715211397,
+              -0.05743840031722705,
+              -0.03490586409247437
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              -0.3149137521512777,
+              0.21818080133206527,
+              -0.060310398490024904,
+              -0.036653368662085045
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              -0.32991375215127666,
+              0.22856934551201658,
+              -0.06318239666282274,
+              -0.03840087323169571
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              -0.3449137521512756,
+              0.23895788969196785,
+              -0.06605439483562059,
+              -0.04014837780130638
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              -0.3599137521512747,
+              0.24934643387191918,
+              -0.06892639300841844,
+              -0.041895882370917056
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              -0.37491375215127376,
+              0.2597349780518705,
+              -0.0717983911812163,
+              -0.04364338694052774
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              -0.38991375215127283,
+              0.27012352223182184,
+              -0.07467038935401416,
+              -0.04539089151013842
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              -0.4049137521512719,
+              0.2805120664117732,
+              -0.077542387526812,
+              -0.0471383960797491
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              -0.41491375215127196,
+              0.2874377625317412,
+              -0.07945705297534404,
+              -0.048303399126156304
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              -0.424913752151272,
+              0.2943634586517092,
+              -0.08137171842387607,
+              -0.04946840217256351
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              -0.43491375215127204,
+              0.3012891547716772,
+              -0.08328638387240811,
+              -0.05063340521897071
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              -0.44491375215127216,
+              0.3082148508916453,
+              -0.08520104932094015,
+              -0.05179840826537791
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              -0.4549137521512723,
+              0.3151405470116133,
+              -0.08711571476947219,
+              -0.052963411311785114
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              -0.4649137521512724,
+              0.3220662431315814,
+              -0.08903038021800423,
+              -0.054128414358192316
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              -0.47491375215127246,
+              0.3289919392515494,
+              -0.09094504566653627,
+              -0.05529341740459952
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              -0.48491375215127247,
+              0.3359176353715174,
+              -0.0928597111150683,
+              -0.05645842045100671
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              -0.49491375215127253,
+              0.34284333149148544,
+              -0.09477437656360034,
+              -0.057623423497413916
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              -0.5049137521512727,
+              0.3497690276114535,
+              -0.09668904201213238,
+              -0.05878842654382112
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              -0.5149137521512728,
+              0.3566947237314215,
+              -0.09860370746066444,
+              -0.05995342959022832
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              -0.5249137521512729,
+              0.3636204198513896,
+              -0.10051837290919648,
+              -0.06111843263663552
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              -0.5349137521512729,
+              0.3705461159713576,
+              -0.10243303835772852,
+              -0.062283435683042725
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              -0.544913752151273,
+              0.3774718120913257,
+              -0.10434770380626054,
+              -0.06344843872944993
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              -0.554913752151273,
+              0.3843975082112937,
+              -0.10626236925479259,
+              -0.06461344177585712
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              -0.5696383589479452,
+              0.39459532342727033,
+              -0.10908163884247338,
+              -0.06632886295338423
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              -0.5843629657446173,
+              0.404793138643247,
+              -0.11190090843015417,
+              -0.06804428413091135
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              -0.5952034682202871,
+              0.41230094123667194,
+              -0.11397650198364326,
+              -0.06930720597178534
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              -0.6060439706959568,
+              0.41980874383009686,
+              -0.11605209553713233,
+              -0.07057012781265934
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              -0.6177249756472959,
+              0.4278986528969785,
+              -0.11828861719557837,
+              -0.0719309684480001
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              -0.6199567670052871,
+              0.4294443237718403,
+              -0.11871593057572619,
+              -0.0721909728211006
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 900000000
+            }
+          }
+        ]
+      },
+      "planned_duration_sim_sec": 6.749999999999975,
+      "publish_intent_at_utc": "2026-10-27T08:20:08.894Z",
+      "published_at_utc": "2026-10-27T08:20:08.901Z",
+      "fk": {
+        "crane_plus_link_endtip": {
+          "moveit_xyz": [
+            0.06777596234823594,
+            -0.04836505388002388,
+            0.2266749267738414
+          ],
+          "world_xyz": [
+            0.06777596234823594,
+            -0.04836505388002388,
+            1.2416749267738414
+          ],
+          "quaternion_xyzw": [
+            0.09305893594975775,
+            0.29061361598734803,
+            -0.29041642902285647,
+            0.9069410446088926
+          ],
+          "local_x_axis_world": [
+            0.6624040479127408,
+            -0.47269277126655923,
+            -0.5811905206566567
+          ],
+          "target_id": "A",
+          "target_face_world": [
+            0.1464981221992561,
+            -0.10458632889671492,
+            1.0919999999999999
+          ],
+          "distance_to_target_m": 0.17821502159152242,
+          "axis_to_target_deg": 21.59058365415834
+        },
+        "inspection_camera_link": {
+          "moveit_xyz": [
+            0.0893040939054,
+            -0.06372756894618706,
+            0.20778623485250006
+          ],
+          "world_xyz": [
+            0.0893040939054,
+            -0.06372756894618706,
+            1.2227862348525
+          ],
+          "quaternion_xyzw": [
+            0.13541327320345034,
+            0.42288191431270933,
+            -0.27324881197695383,
+            0.8533283182578258
+          ],
+          "local_x_axis_world": [
+            0.4930119466008034,
+            -0.35181424998923577,
+            -0.7957172575817355
+          ],
+          "target_id": "A",
+          "target_face_world": [
+            0.1464981221992561,
+            -0.10458632889671492,
+            1.0919999999999999
+          ],
+          "distance_to_target_m": 0.14847772346068147,
+          "axis_to_target_deg": 9.021728353580064
+        },
+        "pointing_correspondence": {
+          "selected_target": "A",
+          "tip_clearance_by_entity_m": {
+            "gauge_A": 0.14233803389711128,
+            "gauge_B": 0.15361487267197174,
+            "gauge_C": 0.18953983080357267
+          },
+          "nearest_entity": "gauge_A"
+        }
+      }
+    },
+    {
+      "from": "observe_A",
+      "to": "observe_B",
+      "command_id": "e1e54805fb704747a9a1d4965bf825b8",
+      "publish_count": 1,
+      "arrival": {
+        "result": "PASS",
+        "at_utc": "2026-10-27T08:20:33.579Z",
+        "actual_positions": [
+          -0.00012631290143600628,
+          0.42945365758280196,
+          -0.1187204873995237,
+          -0.07216646343125893
+        ],
+        "errors_rad": [
+          -0.00012631290143600628,
+          -9.865138673348373e-06,
+          1.767474371382194e-05,
+          -7.112639597271764e-05
+        ],
+        "joint_state_header": {
+          "stamp": {
+            "sec": 18578,
+            "nanosec": 308000000
+          },
+          "frame_id": ""
+        },
+        "fresh_samples_after_send": 645,
+        "stable_samples": 26
+      },
+      "started_at_utc": "2026-10-27T08:20:24.402Z",
+      "geometry_report": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/geometry_02.json",
+      "geometry_command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/multigauge/geometry_check.py",
+        "--report",
+        "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/geometry_02.json"
+      ],
+      "trajectory": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "joint_names": [
+          "crane_plus_joint1",
+          "crane_plus_joint2",
+          "crane_plus_joint3",
+          "crane_plus_joint4"
+        ],
+        "points": [
+          {
+            "positions": [
+              -0.6199567670052767,
+              0.4294443238243558,
+              -0.11871593070973274,
+              -0.07219097286543286
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              -0.6199567670052767,
+              0.4294443238243558,
+              -0.11871593070973274,
+              -0.07219097286543286
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 283333333
+            }
+          },
+          {
+            "positions": [
+              -0.6149567670052767,
+              0.42944439911717114,
+              -0.1187159674679669,
+              -0.07219077515232922
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 416666667
+            }
+          },
+          {
+            "positions": [
+              -0.5999567670052768,
+              0.4294446249956172,
+              -0.11871607774266947,
+              -0.07219018201301834
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 550000000
+            }
+          },
+          {
+            "positions": [
+              -0.5874567670052768,
+              0.4294448132276555,
+              -0.11871616963825492,
+              -0.07218968773025927
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 683333333
+            }
+          },
+          {
+            "positions": [
+              -0.5749567670052769,
+              0.42944500145969383,
+              -0.11871626153384036,
+              -0.07218919344750022
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 816666667
+            }
+          },
+          {
+            "positions": [
+              -0.5599567670052771,
+              0.42944522733813983,
+              -0.11871637180854291,
+              -0.07218860030818933
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 950000000
+            }
+          },
+          {
+            "positions": [
+              -0.5449567670052773,
+              0.4294454532165858,
+              -0.11871648208324545,
+              -0.07218800716887844
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 83333333
+            }
+          },
+          {
+            "positions": [
+              -0.5299567670052776,
+              0.4294456790950318,
+              -0.11871659235794799,
+              -0.07218741402956755
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 216666667
+            }
+          },
+          {
+            "positions": [
+              -0.514956767005278,
+              0.4294459049734778,
+              -0.11871670263265052,
+              -0.07218682089025666
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 350000000
+            }
+          },
+          {
+            "positions": [
+              -0.49995676700527836,
+              0.42944613085192374,
+              -0.11871681290735307,
+              -0.07218622775094577
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 483333333
+            }
+          },
+          {
+            "positions": [
+              -0.48495676700527873,
+              0.42944635673036974,
+              -0.11871692318205562,
+              -0.0721856346116349
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 616666667
+            }
+          },
+          {
+            "positions": [
+              -0.4699567670052791,
+              0.42944658260881574,
+              -0.11871703345675816,
+              -0.072185041472324
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 750000000
+            }
+          },
+          {
+            "positions": [
+              -0.4549567670052795,
+              0.42944680848726174,
+              -0.11871714373146068,
+              -0.07218444833301312
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 883333333
+            }
+          },
+          {
+            "positions": [
+              -0.43995676700527986,
+              0.42944703436570775,
+              -0.11871725400616323,
+              -0.07218385519370224
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 16666667
+            }
+          },
+          {
+            "positions": [
+              -0.4249567670052803,
+              0.42944726024415375,
+              -0.11871736428086578,
+              -0.07218326205439135
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              -0.4099567670052807,
+              0.42944748612259975,
+              -0.1187174745555683,
+              -0.07218266891508046
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 283333333
+            }
+          },
+          {
+            "positions": [
+              -0.3949567670052811,
+              0.4294477120010457,
+              -0.11871758483027084,
+              -0.07218207577576959
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 416666667
+            }
+          },
+          {
+            "positions": [
+              -0.37995676700528147,
+              0.4294479378794917,
+              -0.11871769510497339,
+              -0.0721814826364587
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 550000000
+            }
+          },
+          {
+            "positions": [
+              -0.3649567670052819,
+              0.4294481637579377,
+              -0.11871780537967594,
+              -0.07218088949714781
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 683333333
+            }
+          },
+          {
+            "positions": [
+              -0.34995676700528255,
+              0.4294483896363837,
+              -0.11871791565437848,
+              -0.07218029635783693
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 816666667
+            }
+          },
+          {
+            "positions": [
+              -0.33495676700528315,
+              0.4294486155148297,
+              -0.11871802592908101,
+              -0.07217970321852604
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 950000000
+            }
+          },
+          {
+            "positions": [
+              -0.31995676700528386,
+              0.4294488413932757,
+              -0.11871813620378355,
+              -0.07217911007921515
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 83333333
+            }
+          },
+          {
+            "positions": [
+              -0.30495676700528457,
+              0.4294490672717217,
+              -0.11871824647848608,
+              -0.07217851693990428
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 216666667
+            }
+          },
+          {
+            "positions": [
+              -0.2899567670052852,
+              0.42944929315016767,
+              -0.11871835675318862,
+              -0.07217792380059339
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 350000000
+            }
+          },
+          {
+            "positions": [
+              -0.2749567670052859,
+              0.4294495190286136,
+              -0.11871846702789117,
+              -0.0721773306612825
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 483333333
+            }
+          },
+          {
+            "positions": [
+              -0.2599567670052866,
+              0.42944974490705967,
+              -0.11871857730259372,
+              -0.07217673752197162
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 616666667
+            }
+          },
+          {
+            "positions": [
+              -0.24495676700528723,
+              0.4294499707855057,
+              -0.11871868757729626,
+              -0.07217614438266073
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 750000000
+            }
+          },
+          {
+            "positions": [
+              -0.2299567670052879,
+              0.4294501966639517,
+              -0.11871879785199879,
+              -0.07217555124334984
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 883333333
+            }
+          },
+          {
+            "positions": [
+              -0.21495676700528854,
+              0.4294504225423976,
+              -0.11871890812670133,
+              -0.07217495810403896
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 16666667
+            }
+          },
+          {
+            "positions": [
+              -0.1999567670052892,
+              0.42945064842084363,
+              -0.11871901840140386,
+              -0.07217436496472807
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              -0.18495676700528987,
+              0.42945087429928963,
+              -0.1187191286761064,
+              -0.07217377182541719
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 283333333
+            }
+          },
+          {
+            "positions": [
+              -0.1699567670052905,
+              0.4294511001777356,
+              -0.11871923895080894,
+              -0.07217317868610632
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 416666667
+            }
+          },
+          {
+            "positions": [
+              -0.15495676700529115,
+              0.4294513260561816,
+              -0.11871934922551147,
+              -0.07217258554679543
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 550000000
+            }
+          },
+          {
+            "positions": [
+              -0.13995676700529183,
+              0.4294515519346276,
+              -0.11871945950021401,
+              -0.07217199240748454
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 683333333
+            }
+          },
+          {
+            "positions": [
+              -0.12495676700529253,
+              0.42945177781307353,
+              -0.11871956977491654,
+              -0.07217139926817365
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 816666667
+            }
+          },
+          {
+            "positions": [
+              -0.1099567670052932,
+              0.42945200369151953,
+              -0.1187196800496191,
+              -0.07217080612886276
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 950000000
+            }
+          },
+          {
+            "positions": [
+              -0.09495676700529385,
+              0.42945222956996554,
+              -0.11871979032432164,
+              -0.07217021298955188
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 83333333
+            }
+          },
+          {
+            "positions": [
+              -0.07995676700529453,
+              0.42945245544841154,
+              -0.11871990059902418,
+              -0.072169619850241
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 216666667
+            }
+          },
+          {
+            "positions": [
+              -0.06495676700529522,
+              0.42945268132685754,
+              -0.11872001087372673,
+              -0.07216902671093012
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 350000000
+            }
+          },
+          {
+            "positions": [
+              -0.050235124388316794,
+              0.4294529030136413,
+              -0.1187201191020441,
+              -0.07216844457859965
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 483333333
+            }
+          },
+          {
+            "positions": [
+              -0.03551348177133837,
+              0.42945312470042507,
+              -0.11872022733036146,
+              -0.07216786244626919
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 616666667
+            }
+          },
+          {
+            "positions": [
+              -0.02468188634763574,
+              0.42945328780868786,
+              -0.11872030696042568,
+              -0.0721674341365995
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 750000000
+            }
+          },
+          {
+            "positions": [
+              -0.013850290923933112,
+              0.4294534509169507,
+              -0.11872038659048992,
+              -0.07216700582692981
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 883333333
+            }
+          },
+          {
+            "positions": [
+              -0.0021871000765275855,
+              0.42945362654784563,
+              -0.11872047233415,
+              -0.07216654463379767
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 16666667
+            }
+          },
+          {
+            "positions": [
+              3.280553692020481e-05,
+              0.4294536599764343,
+              -0.11872048865411208,
+              -0.07216645685291195
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 150000000
+            }
+          }
+        ]
+      },
+      "planned_duration_sim_sec": 6.0,
+      "publish_intent_at_utc": "2026-10-27T08:20:26.339Z",
+      "published_at_utc": "2026-10-27T08:20:26.353Z",
+      "fk": {
+        "crane_plus_link_endtip": {
+          "moveit_xyz": [
+            0.08328468614836572,
+            -1.0519930408535554e-05,
+            0.2266631912837937
+          ],
+          "world_xyz": [
+            0.08328468614836572,
+            -1.0519930408535554e-05,
+            1.2416631912837937
+          ],
+          "quaternion_xyzw": [
+            1.9276663564593826e-05,
+            0.30522081782327015,
+            -6.0142726108895966e-05,
+            0.9522816014071451
+          ],
+          "local_x_axis_world": [
+            0.8136804975002933,
+            -0.00010277834502776281,
+            -0.5813123406777866
+          ],
+          "target_id": "B",
+          "target_face_world": [
+            0.18,
+            0.0,
+            1.0919999999999999
+          ],
+          "distance_to_target_m": 0.17819349839244558,
+          "axis_to_target_deg": 21.58575931924583
+        },
+        "inspection_camera_link": {
+          "moveit_xyz": [
+            0.10972930231712524,
+            -1.3860226621937846e-05,
+            0.20777054021176564
+          ],
+          "world_xyz": [
+            0.10972930231712524,
+            -1.3860226621937846e-05,
+            1.2227705402117655
+          ],
+          "quaternion_xyzw": [
+            2.8047824083358462e-05,
+            0.44410070115088746,
+            -5.658671952129046e-05,
+            0.8959768765144293
+          ],
+          "local_x_axis_world": [
+            0.6055491280704667,
+            -7.648866773541533e-05,
+            -0.795807921324349
+          ],
+          "target_id": "B",
+          "target_face_world": [
+            0.18,
+            0.0,
+            1.0919999999999999
+          ],
+          "distance_to_target_m": 0.14845506165914607,
+          "axis_to_target_deg": 9.016620944930102
+        },
+        "pointing_correspondence": {
+          "selected_target": "B",
+          "tip_clearance_by_entity_m": {
+            "gauge_A": 0.15359843580457724,
+            "gauge_B": 0.14231500883253706,
+            "gauge_C": 0.15360866072088347
+          },
+          "nearest_entity": "gauge_B"
+        }
+      }
+    },
+    {
+      "from": "observe_B",
+      "to": "observe_C",
+      "command_id": "3d83c115d4534ef6b072132e3fcbabab",
+      "publish_count": 1,
+      "arrival": {
+        "result": "PASS",
+        "at_utc": "2026-10-27T08:20:51.469Z",
+        "actual_positions": [
+          0.6199389437987689,
+          0.42949472223512436,
+          -0.11867966961402684,
+          -0.07201943430803127
+        ],
+        "errors_rad": [
+          -6.105620123109112e-05,
+          3.119951364904949e-05,
+          5.849252921068249e-05,
+          7.590272725493952e-05
+        ],
+        "joint_state_header": {
+          "stamp": {
+            "sec": 18594,
+            "nanosec": 118000000
+          },
+          "frame_id": ""
+        },
+        "fresh_samples_after_send": 784,
+        "stable_samples": 26
+      },
+      "started_at_utc": "2026-10-27T08:20:40.657Z",
+      "geometry_report": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/geometry_03.json",
+      "geometry_command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/multigauge/geometry_check.py",
+        "--report",
+        "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/geometry_03.json"
+      ],
+      "trajectory": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "joint_names": [
+          "crane_plus_joint1",
+          "crane_plus_joint2",
+          "crane_plus_joint3",
+          "crane_plus_joint4"
+        ],
+        "points": [
+          {
+            "positions": [
+              3.2805536920204384e-05,
+              0.4294536600289505,
+              -0.11872048878811983,
+              -0.07216645689724631
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              3.2805536920204384e-05,
+              0.4294536600289505,
+              -0.11872048878811983,
+              -0.07216645689724631
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.005032805536920196,
+              0.4294539912258945,
+              -0.11872015954854295,
+              -0.0721652710493693
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.020032805536920162,
+              0.42945498481672645,
+              -0.1187191718298123,
+              -0.07216171350573829
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.03253280553692019,
+              0.4294558128090864,
+              -0.11871834873087009,
+              -0.07215874888604577
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.04503280553692022,
+              0.4294566408014464,
+              -0.11871752563192789,
+              -0.07215578426635326
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.0600328055369201,
+              0.42945763439227835,
+              -0.11871653791319724,
+              -0.07215222672272224
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.07503280553691999,
+              0.4294586279831103,
+              -0.11871555019446658,
+              -0.07214866917909123
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.08503280553692004,
+              0.42945929037699826,
+              -0.11871489171531281,
+              -0.07214629748333722
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.09503280553692009,
+              0.4294599527708863,
+              -0.11871423323615905,
+              -0.0721439257875832
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.10503280553692014,
+              0.42946061516477424,
+              -0.11871357475700528,
+              -0.0721415540918292
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.11503280553692022,
+              0.4294612775586622,
+              -0.11871291627785151,
+              -0.07213918239607518
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.1250328055369203,
+              0.42946193995255016,
+              -0.11871225779869775,
+              -0.07213681070032116
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.13503280553692038,
+              0.4294626023464381,
+              -0.11871159931954398,
+              -0.07213443900456715
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.1450328055369204,
+              0.4294632647403261,
+              -0.1187109408403902,
+              -0.07213206730881314
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.15503280553692048,
+              0.42946392713421405,
+              -0.11871028236123644,
+              -0.07212969561305912
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.1650328055369205,
+              0.429464589528102,
+              -0.11870962388208267,
+              -0.07212732391730511
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.17503280553692058,
+              0.42946525192199,
+              -0.1187089654029289,
+              -0.0721249522215511
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.1850328055369206,
+              0.429465914315878,
+              -0.11870830692377514,
+              -0.0721225805257971
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.19503280553692068,
+              0.42946657670976596,
+              -0.11870764844462137,
+              -0.0721202088300431
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.20503280553692074,
+              0.4294672391036539,
+              -0.11870698996546761,
+              -0.07211783713428908
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.21503280553692083,
+              0.42946790149754194,
+              -0.11870633148631383,
+              -0.07211546543853509
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.2250328055369209,
+              0.4294685638914299,
+              -0.11870567300716008,
+              -0.07211309374278108
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.23503280553692096,
+              0.42946922628531786,
+              -0.1187050145280063,
+              -0.07211072204702706
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.24503280553692103,
+              0.4294698886792059,
+              -0.11870435604885253,
+              -0.07210835035127304
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.2550328055369211,
+              0.42947055107309384,
+              -0.11870369756969876,
+              -0.07210597865551903
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.2650328055369213,
+              0.4294712134669818,
+              -0.118703039090545,
+              -0.07210360695976502
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.2750328055369216,
+              0.42947187586086977,
+              -0.11870238061139124,
+              -0.07210123526401102
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.28503280553692184,
+              0.42947253825475773,
+              -0.11870172213223748,
+              -0.07209886356825701
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.29503280553692207,
+              0.4294732006486457,
+              -0.11870106365308371,
+              -0.072096491872503
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.30503280553692236,
+              0.4294738630425337,
+              -0.11870040517392993,
+              -0.07209412017674899
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.3150328055369226,
+              0.4294745254364217,
+              -0.11869974669477616,
+              -0.07209174848099498
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.3250328055369228,
+              0.42947518783030963,
+              -0.1186990882156224,
+              -0.07208937678524097
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.33503280553692305,
+              0.4294758502241976,
+              -0.11869842973646863,
+              -0.07208700508948696
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.3450328055369233,
+              0.42947651261808556,
+              -0.11869777125731487,
+              -0.07208463339373294
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.3550328055369235,
+              0.4294771750119735,
+              -0.1186971127781611,
+              -0.07208226169797893
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.36503280553692374,
+              0.42947783740586154,
+              -0.11869645429900734,
+              -0.07207989000222492
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.375032805536924,
+              0.4294784997997495,
+              -0.11869579581985357,
+              -0.07207751830647091
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.3850328055369242,
+              0.42947916219363746,
+              -0.1186951373406998,
+              -0.0720751466107169
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.3950328055369245,
+              0.4294798245875254,
+              -0.11869447886154603,
+              -0.07207277491496289
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.4050328055369247,
+              0.4294804869814134,
+              -0.11869382038239226,
+              -0.07207040321920888
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.41503280553692495,
+              0.42948114937530135,
+              -0.1186931619032385,
+              -0.07206803152345487
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.42503280553692524,
+              0.42948181176918937,
+              -0.11869250342408473,
+              -0.07206565982770086
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.43503280553692547,
+              0.42948247416307733,
+              -0.11869184494493097,
+              -0.07206328813194685
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.4450328055369257,
+              0.4294831365569653,
+              -0.11869118646577721,
+              -0.07206091643619283
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.455032805536926,
+              0.42948379895085326,
+              -0.11869052798662344,
+              -0.07205854474043882
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.4650328055369262,
+              0.4294844613447412,
+              -0.11868986950746968,
+              -0.07205617304468481
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.47503280553692645,
+              0.4294851237386292,
+              -0.11868921102831591,
+              -0.0720538013489308
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.4850328055369267,
+              0.4294857861325172,
+              -0.11868855254916215,
+              -0.07205142965317679
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.4950328055369269,
+              0.42948644852640516,
+              -0.11868789407000838,
+              -0.07204905795742278
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.5100328055369268,
+              0.4294874421172371,
+              -0.11868690635127771,
+              -0.07204550041379176
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.5250328055369267,
+              0.42948843570806905,
+              -0.11868591863254706,
+              -0.07204194287016075
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.5400328055369265,
+              0.429489429298901,
+              -0.1186849309138164,
+              -0.07203838532652973
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.5550328055369262,
+              0.42949042288973294,
+              -0.11868394319508577,
+              -0.07203482778289871
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.5697582581387155,
+              0.42949139829471306,
+              -0.11868297355472895,
+              -0.07203133535355756
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.5844837107405049,
+              0.4294923736996932,
+              -0.11868200391437214,
+              -0.0720278429242164
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 7,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.5953267635530219,
+              0.4294930919368842,
+              -0.11868128992194812,
+              -0.07202527128198481
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 7,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.6061698163655391,
+              0.4294938101740752,
+              -0.11868057592952411,
+              -0.07202269963975322
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 7,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.6178559219905736,
+              0.4294945842545692,
+              -0.11867980642382983,
+              -0.07201992805104403
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 7,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.6200911224120297,
+              0.42949473231287894,
+              -0.11867965924054162,
+              -0.07201939792950914
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 7,
+              "nanosec": 525000000
+            }
+          }
+        ]
+      },
+      "planned_duration_sim_sec": 7.374999999999983,
+      "publish_intent_at_utc": "2026-10-27T08:20:42.665Z",
+      "published_at_utc": "2026-10-27T08:20:42.675Z",
+      "fk": {
+        "crane_plus_link_endtip": {
+          "moveit_xyz": [
+            0.06778910505020327,
+            0.04838900449585744,
+            0.22666176003592226
+          ],
+          "world_xyz": [
+            0.06778910505020327,
+            0.04838900449585744,
+            1.241661760035922
+          ],
+          "quaternion_xyzw": [
+            -0.09308005450825656,
+            0.2906083148696234,
+            0.29048087369076153,
+            0.9069199373711164
+          ],
+          "local_x_axis_world": [
+            0.6623353386969794,
+            0.472786115973031,
+            -0.5811929005556533
+          ],
+          "target_id": "C",
+          "target_face_world": [
+            0.1464981221992561,
+            0.10458632889671492,
+            1.0919999999999999
+          ],
+          "distance_to_target_m": 0.1781906031962266,
+          "axis_to_target_deg": 21.59476053616224
+        },
+        "inspection_camera_link": {
+          "moveit_xyz": [
+            0.0893150035578551,
+            0.06375455326498095,
+            0.2077729907678635
+          ],
+          "world_xyz": [
+            0.0893150035578551,
+            0.06375455326498095,
+            1.2227729907678635
+          ],
+          "quaternion_xyzw": [
+            -0.13544378511412128,
+            0.42287351849462756,
+            0.2733093770827629,
+            0.8533082402207105
+          ],
+          "local_x_axis_world": [
+            0.492959943509212,
+            0.3518831072497446,
+            -0.7957190288837256
+          ],
+          "target_id": "C",
+          "target_face_world": [
+            0.1464981221992561,
+            0.10458632889671492,
+            1.0919999999999999
+          ],
+          "distance_to_target_m": 0.1484544309650896,
+          "axis_to_target_deg": 9.027477915745042
+        },
+        "pointing_correspondence": {
+          "selected_target": "C",
+          "tip_clearance_by_entity_m": {
+            "gauge_A": 0.18954123938795542,
+            "gauge_B": 0.1535984276157672,
+            "gauge_C": 0.14231187127027575
+          },
+          "nearest_entity": "gauge_C"
+        }
+      }
+    },
+    {
+      "from": "observe_C",
+      "to": "home",
+      "command_id": "0fb9d671ec3746d5b342fade51f69eda",
+      "publish_count": 1,
+      "arrival": {
+        "result": "PASS",
+        "at_utc": "2026-10-27T08:21:12.081Z",
+        "actual_positions": [
+          0.00011818451823498022,
+          2.45610059070438e-05,
+          2.301325560026513e-05,
+          -8.239347727639105e-05
+        ],
+        "errors_rad": [
+          0.00011818451823498022,
+          2.45610059070438e-05,
+          2.301325560026513e-05,
+          -8.239347727639105e-05
+        ],
+        "joint_state_header": {
+          "stamp": {
+            "sec": 18612,
+            "nanosec": 468000000
+          },
+          "frame_id": ""
+        },
+        "fresh_samples_after_send": 734,
+        "stable_samples": 26
+      },
+      "started_at_utc": "2026-10-27T08:21:01.989Z",
+      "geometry_report": "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/geometry_04.json",
+      "geometry_command": [
+        "/usr/bin/python3",
+        "/home/ubuntu/multigauge/geometry_check.py",
+        "--report",
+        "/home/ubuntu/multigauge/results/runs/mg_20261027T081951Z_e109f6/geometry_04.json"
+      ],
+      "trajectory": {
+        "header": {
+          "stamp": {
+            "sec": 0,
+            "nanosec": 0
+          },
+          "frame_id": ""
+        },
+        "joint_names": [
+          "crane_plus_joint1",
+          "crane_plus_joint2",
+          "crane_plus_joint3",
+          "crane_plus_joint4"
+        ],
+        "points": [
+          {
+            "positions": [
+              0.6200911224120195,
+              0.4294947323653967,
+              -0.11867965937454812,
+              -0.07201939797383777
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.6200911224120195,
+              0.4294947323653967,
+              -0.11867965937454812,
+              -0.07201939797383777
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.6150911224120195,
+              0.42603111205995675,
+              -0.11772233796922316,
+              -0.07143923551566475
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.6000911224120196,
+              0.41564025114363684,
+              -0.11485037375324829,
+              -0.06969874814114574
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.5875911224120196,
+              0.406981200380037,
+              -0.11245707023993592,
+              -0.06824834199571322
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.5750911224120197,
+              0.39832214961643714,
+              -0.11006376672662355,
+              -0.0667979358502807
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.56009112241202,
+              0.38793128870011745,
+              -0.10719180251064873,
+              -0.0650574484757617
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 0,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.5450911224120204,
+              0.37754042778379776,
+              -0.10431983829467392,
+              -0.0633169611012427
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.5300911224120208,
+              0.3671495668674781,
+              -0.10144787407869912,
+              -0.06157647372672371
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.5150911224120212,
+              0.35675870595115844,
+              -0.09857590986272431,
+              -0.05983598635220472
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.5000911224120215,
+              0.3463678450348388,
+              -0.0957039456467495,
+              -0.05809549897768572
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.4850911224120218,
+              0.3359769841185192,
+              -0.0928319814307747,
+              -0.05635501160316672
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.4700911224120222,
+              0.32558612320219954,
+              -0.0899600172147999,
+              -0.05461452422864773
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.4550911224120226,
+              0.3151952622858799,
+              -0.0870880529988251,
+              -0.05287403685412874
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.440091122412023,
+              0.3048044013695603,
+              -0.0842160887828503,
+              -0.05113354947960975
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 1,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.4250911224120233,
+              0.29441354045324064,
+              -0.0813441245668755,
+              -0.04939306210509076
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.41009112241202367,
+              0.28402267953692095,
+              -0.07847216035090068,
+              -0.04765257473057176
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.39509112241202404,
+              0.2736318186206013,
+              -0.07560019613492588,
+              -0.04591208735605276
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.38009112241202436,
+              0.2632409577042817,
+              -0.07272823191895109,
+              -0.04417159998153377
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.36509112241202474,
+              0.252850096787962,
+              -0.06985626770297629,
+              -0.04243111260701478
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.3550911224120239,
+              0.24592285617708146,
+              -0.0679416248923262,
+              -0.04127078769066866
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.345091122412023,
+              0.23899561556620094,
+              -0.06602698208167612,
+              -0.04011046277432253
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.33509112241202216,
+              0.2320683749553204,
+              -0.06411233927102604,
+              -0.03895013785797641
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 2,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.32509112241202126,
+              0.22514113434443983,
+              -0.06219769646037595,
+              -0.03778981294163028
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.3150911224120204,
+              0.2182138937335593,
+              -0.060283053649725866,
+              -0.03662948802528416
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.3050911224120195,
+              0.21128665312267872,
+              -0.05836841083907578,
+              -0.03546916310893803
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.2950911224120187,
+              0.2043594125117982,
+              -0.0564537680284257,
+              -0.03430883819259191
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.2850911224120179,
+              0.19743217190091772,
+              -0.05453912521777563,
+              -0.03314851327624579
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.27509112241201705,
+              0.1905049312900372,
+              -0.052624482407125556,
+              -0.031988188359899666
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.26509112241201616,
+              0.18357769067915666,
+              -0.05070983959647547,
+              -0.03082786344355354
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.2550911224120153,
+              0.1766504500682761,
+              -0.04879519678582539,
+              -0.02966753852720742
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 3,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.24509112241201442,
+              0.16972320945739555,
+              -0.04688055397517531,
+              -0.028507213610861296
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.2350911224120136,
+              0.16279596884651504,
+              -0.04496591116452523,
+              -0.027346888694515174
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.22509112241201276,
+              0.15586872823563455,
+              -0.04305126835387516,
+              -0.026186563778169053
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.21509112241201195,
+              0.14894148762475404,
+              -0.041136625543225086,
+              -0.02502623886182293
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.20509112241201177,
+              0.142014247013874,
+              -0.039221982732575135,
+              -0.023865913945476887
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.1950911224120116,
+              0.13508700640299393,
+              -0.03730733992192519,
+              -0.022705589029130845
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.18509112241201142,
+              0.12815976579211388,
+              -0.03539269711127524,
+              -0.0215452641127848
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.1750911224120113,
+              0.12123252518123386,
+              -0.033478054300625296,
+              -0.02038493919643876
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 4,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.16509112241201115,
+              0.11430528457035383,
+              -0.03156341148997536,
+              -0.01922461428009272
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.15509112241201103,
+              0.1073780439594738,
+              -0.029648768679325414,
+              -0.01806428936374668
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.14509112241201091,
+              0.10045080334859378,
+              -0.027734125868675477,
+              -0.01690396444740064
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.13509112241201082,
+              0.09352356273771378,
+              -0.02581948305802554,
+              -0.015743639531054607
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.1250911224120107,
+              0.08659632212683377,
+              -0.023904840247375603,
+              -0.014583314614708569
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.11509112241201057,
+              0.07966908151595374,
+              -0.02199019743672566,
+              -0.013422989698362529
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.10509112241201045,
+              0.0727418409050737,
+              -0.020075554626075718,
+              -0.012262664782016488
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.09509112241201031,
+              0.06581460029419367,
+              -0.018160911815425774,
+              -0.011102339865670448
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 5,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              0.0850911224120102,
+              0.05888735968331365,
+              -0.016246269004775833,
+              -0.00994201494932441
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 25000000
+            }
+          },
+          {
+            "positions": [
+              0.07509112241201006,
+              0.05196011907243362,
+              -0.01433162619412589,
+              -0.008781690032978372
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 150000000
+            }
+          },
+          {
+            "positions": [
+              0.06509112241200994,
+              0.0450328784615536,
+              -0.012416983383475952,
+              -0.007621365116632332
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 275000000
+            }
+          },
+          {
+            "positions": [
+              0.05036196745373378,
+              0.03482963842246218,
+              -0.009596876318694748,
+              -0.005912304567151394
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 400000000
+            }
+          },
+          {
+            "positions": [
+              0.03563281249545762,
+              0.024626398383370756,
+              -0.006776769253913548,
+              -0.0042032440176704555
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 525000000
+            }
+          },
+          {
+            "positions": [
+              0.024778549539229134,
+              0.017107389268215187,
+              -0.004698565600508891,
+              -0.0029437968420021002
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 650000000
+            }
+          },
+          {
+            "positions": [
+              0.013924286583000649,
+              0.00958838015305962,
+              -0.0026203619471042343,
+              -0.001684349666333745
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 775000000
+            }
+          },
+          {
+            "positions": [
+              0.0022157606705440255,
+              0.0014776025336286584,
+              -0.0003785974509449017,
+              -0.00032578023134309736
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 6,
+              "nanosec": 900000000
+            }
+          },
+          {
+            "positions": [
+              -3.445532536133257e-05,
+              -8.117622938006515e-05,
+              5.2238536952061777e-05,
+              -6.46820626221607e-05
+            ],
+            "velocities": [],
+            "accelerations": [],
+            "effort": [],
+            "time_from_start": {
+              "sec": 7,
+              "nanosec": 25000000
+            }
+          }
+        ]
+      },
+      "planned_duration_sim_sec": 6.874999999999956,
+      "publish_intent_at_utc": "2026-10-27T08:21:03.852Z",
+      "published_at_utc": "2026-10-27T08:21:03.863Z",
+      "fk": {
+        "crane_plus_link_endtip": {
+          "moveit_xyz": [
+            2.1832781285158687e-06,
+            2.5802967499296725e-10,
+            0.24789999997485346
+          ],
+          "world_xyz": [
+            2.1832781285158687e-06,
+            2.5802967499296725e-10,
+            1.2628999999748534
+          ],
+          "quaternion_xyzw": [
+            -2.480138383320899e-09,
+            4.197061370598427e-05,
+            5.909225903105298e-05,
+            0.9999999973732863
+          ],
+          "local_x_axis_world": [
+            0.9999999894931451,
+            0.0001181845175434832,
+            -8.394122748459293e-05
+          ]
+        },
+        "inspection_camera_link": {
+          "moveit_xyz": [
+            0.03250218293665573,
+            3.841254849838197e-06,
+            0.24789727188496022
+          ],
+          "world_xyz": [
+            0.03250218293665573,
+            3.841254849838197e-06,
+            1.26289727188496
+          ],
+          "quaternion_xyzw": [
+            -8.833089122349445e-06,
+            0.1494796314100238,
+            5.8428346032561813e-05,
+            0.9887648033286927
+          ],
+          "local_x_axis_world": [
+            0.9553116727593036,
+            0.00011290305033497219,
+            -0.29560039773776087
+          ]
+        }
+      }
+    }
+  ],
+  "home_return": {
+    "result": "PASS",
+    "at_utc": "2026-10-27T08:21:12.090Z",
+    "actual_positions": [
+      0.0001029205499718083,
+      1.398728780788521e-05,
+      2.5935760308621012e-05,
+      -8.062236100605959e-05
+    ],
+    "fk": {
+      "crane_plus_link_endtip": {
+        "moveit_xyz": [
+          4.376270899262133e-08,
+          4.504082093680132e-12,
+          0.24789999998520645
+        ],
+        "world_xyz": [
+          4.376270899262133e-08,
+          4.504082093680132e-12,
+          1.2628999999852064
+        ],
+        "quaternion_xyzw": [
+          -1.7669885922905434e-09,
+          3.4336944200449676e-05,
+          5.146027493285515e-05,
+          0.9999999980864072
+        ],
+        "local_x_axis_world": [
+          0.9999999923456288,
+          0.00010292054954741629,
+          -6.867388845134494e-05
+        ]
+      },
+      "inspection_camera_link": {
+        "moveit_xyz": [
+          0.03250004351394193,
+          3.3449223643731237e-06,
+          0.2478977680838318
+        ],
+        "world_xyz": [
+          0.03250004351394193,
+          3.3449223643731237e-06,
+          1.2628977680838318
+        ],
+        "quaternion_xyzw": [
+          -7.69187452975895e-06,
+          0.14947208356496566,
+          5.088216746076896e-05,
+          0.9887659447951208
+        ],
+        "local_x_axis_world": [
+          0.9553161872915059,
+          9.832166774017482e-05,
+          -0.2955858126359755
+        ]
+      }
+    }
+  },
+  "abort_reason": null,
+  "runtime_config_sha256": "cb7938f60f62a1dfe10fcf2a76745e4c55684870536dfb843ca6037b96aff985",
+  "truth_input": "ABSENT",
+  "initial_home": {
+    "result": "PASS",
+    "at_utc": "2026-10-27T08:20:06.733Z",
+    "actual_positions": [
+      8.624784871936329e-05,
+      2.137355307575127e-05,
+      1.5631387332839626e-06,
+      4.422729974119174e-05
+    ],
+    "fk": {
+      "crane_plus_link_endtip": {
+        "moveit_xyz": [
+          3.6262786325644398e-06,
+          3.127587316911827e-10,
+          0.24789999996269446
+        ],
+        "world_xyz": [
+          3.6262786325644398e-06,
+          3.127587316911827e-10,
+          1.2628999999626944
+        ],
+        "quaternion_xyzw": [
+          5.264759593405467e-10,
+          -1.2208442687707093e-05,
+          4.312392434310186e-05,
+          0.9999999989956405
+        ],
+        "local_x_axis_world": [
+          0.9999999959825622,
+          8.624784858672497e-05,
+          2.4416885396298275e-05
+        ]
+      },
+      "inspection_camera_link": {
+        "moveit_xyz": [
+          0.03250362614806583,
+          2.803367837800253e-06,
+          0.24790079351146985
+        ],
+        "world_xyz": [
+          0.03250362614806583,
+          2.803367837800253e-06,
+          1.2629007935114698
+        ],
+        "quaternion_xyzw": [
+          -6.443838154564101e-06,
+          0.1494260609684734,
+          4.263976783314531e-05,
+          0.9887729013498364
+        ],
+        "local_x_axis_world": [
+          0.9553437009705925,
+          8.239633920061528e-05,
+          -0.29549688023167753
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+﻿run_id,group,campaign,combination,runtime_result,image_correct_count,image_observed_count,image_total,selection_correct,pointing_correct,motion_arrivals_pass,motion_arrivals_total,home_return,task_success,elapsed_sec,abort_reason
+mg_20261026T221103Z_a9bf9b,old16,pilot,NAA,FAIL,0,0,3,False,False,0,0,False,False,9.94,RuntimeError: display acknowledgement differs from inference/selection state
+mg_20261026T221144Z_74754f,old16,pilot,NAA,FAIL,0,0,3,False,False,0,0,False,False,11.636,AttributeError: can't set attribute 'clients'
+mg_20261026T221209Z_3c7586,old16,pilot,NAA,FAIL,0,0,3,False,False,0,0,False,False,11.486,RuntimeError: collision pose/size mismatch camera_demo_table
+mg_20261026T221246Z_e4b14c,old16,pilot,NAA,FAIL,0,0,3,False,False,0,0,False,False,11.589,"RuntimeError: MoveIt collision/state invalid: [OrderedDict([('header', OrderedDict([('stamp', OrderedDict([('sec', 153), ('nanosec', 465000000)])), ('frame_id', 'world')])), ('position', OrderedDict([('x', 0.013000000268817778), ('y', -0.007643845509560341), ('z', 0.24051746488706385)])), ('normal', OrderedDict([('x', 0.23077154258601207), ('y', 0.6246568475894932), ('z', 0.746021660471081)])), ('depth', 0.005246452703182701), ('contact_body_1', 'crane_plus_link3'), ('body_type_1', 0), ('contact_body_2', 'inspection_camera_link'), ('body_type_2', 0)])]"
+mg_20261026T221606Z_99f978,old16,pilot,NAA,PASS,3,3,3,True,True,6,6,True,True,101.193,
+mg_20261027T021158Z_5fdbf8,old16,eight_combinations,NNN,PASS,3,3,3,True,True,4,4,True,True,78.134,
+mg_20261027T021324Z_cb3f78,old16,eight_combinations,NNA,PASS,3,3,3,True,True,5,5,True,True,92.769,
+mg_20261027T021505Z_8ac959,old16,eight_combinations,NAN,PASS,3,3,3,True,True,5,5,True,True,89.446,
+mg_20261027T021643Z_953199,old16,eight_combinations,NAA,PASS,3,3,3,True,True,6,6,True,True,103.537,
+mg_20261027T021835Z_6edf7a,old16,eight_combinations,ANN,PASS,3,3,3,True,True,5,5,True,True,97.407,
+mg_20261027T022021Z_85a93f,old16,eight_combinations,ANA,PASS,3,3,3,True,True,6,6,True,True,117.125,
+mg_20261027T022226Z_8d8173,old16,eight_combinations,AAN,PASS,3,3,3,True,True,6,6,True,True,106.295,
+mg_20261027T022420Z_1b03b1,old16,eight_combinations,AAA,FAIL,2,2,3,False,False,2,3,False,False,53.841,RuntimeError: Gazebo collision geometry/pose mismatch; no motion sent
+mg_20261027T022932Z_be2d41,old16,eight_combinations,AAA,PASS,3,3,3,True,True,7,7,True,True,117.446,
+mg_20261027T023137Z_29c6e6,old16,held_out,NNN,PASS,3,3,3,True,True,4,4,True,True,77.306,
+mg_20261027T023301Z_5ecbe8,old16,held_out,AAA,PASS,3,3,3,True,True,7,7,True,True,123.151,
+mg_20261027T081621Z_813352,new_final_ui,final_japanese_ui,NAN,PASS,3,3,3,True,True,5,5,True,True,88.873,
+mg_20261027T081759Z_9a885d,new_final_ui,final_japanese_ui,NAA,PASS,3,3,3,True,True,6,6,True,True,103.085,
+mg_20261027T081951Z_e109f6,new_final_ui,final_japanese_ui,NNN,PASS,3,3,3,True,True,4,4,True,True,78.722,

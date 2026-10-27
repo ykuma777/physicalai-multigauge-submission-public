@@ -1,0 +1,24 @@
+{
+  "run_id": "mg_20261027T081759Z_9a885d",
+  "revision": 25,
+  "at_utc": "2026-10-27T08:19:44.848Z",
+  "stage": "COMPLETE_HOME",
+  "result": "PASS",
+  "error": null,
+  "image_hashes": {
+    "A": "c34d256be28f8b5d94d7ae008de94a16b6d5a855d74aea96763519ff0b856e76",
+    "B": "7d5e61549ee1a3543cb7f4f5d23181ce1b22e6457e12cbc77246e47022155f8b",
+    "C": "8479c12645a2aaa0fec94bcd656a4655d5e2186dff55fbce90e78b4d43669154"
+  },
+  "labels": {
+    "A": "normal",
+    "B": "abnormal",
+    "C": "abnormal"
+  },
+  "selected_targets": [
+    "B",
+    "C"
+  ],
+  "current_target": null,
+  "pointing_target": null
+}

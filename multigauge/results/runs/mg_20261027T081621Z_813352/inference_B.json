@@ -1,0 +1,70 @@
+{
+  "label": "abnormal",
+  "image_sha256": "8e55a0d223c95ffae5c653295a117d4d9c23d69d6ffb773dd13bbd15b2da3ea2",
+  "input_image": "/home/ubuntu/multigauge/results/runs/mg_20261027T081621Z_813352/observation_B.png",
+  "model_sha256": "dc3192f77dbeb47af9007853dbff516758ac8d6569ce52a98560ae1009a2ea9b",
+  "model_version": "grayscale_hog_linear_svm_v1",
+  "runtime_config_sha256": "7f36fd0fbc9d47ae21cf9fb076f5be5187f5af0bb3cda4a34dfb0d30fdb613e7",
+  "preprocessing_sha256": "6d3b22f8d57502373cb0a09b1c199b787165b0dfc4351bac82df895920a2548d",
+  "preprocessing_contract": {
+    "schema_version": 1,
+    "settings": {
+      "image_width": 640,
+      "image_height": 480,
+      "roi_center_xy": [
+        320,
+        310
+      ],
+      "roi_size_px": 192,
+      "resize_px": 128,
+      "hog_win_size_px": 128,
+      "minimum_model_margin": 0.0
+    },
+    "decoder": "OpenCV IMREAD_COLOR BGR8",
+    "grayscale": "COLOR_BGR2GRAY",
+    "resize_interpolation": "INTER_LINEAR",
+    "hog": {
+      "block": [
+        16,
+        16
+      ],
+      "block_stride": [
+        8,
+        8
+      ],
+      "cell": [
+        8,
+        8
+      ],
+      "bins": 9,
+      "gamma_correction": false
+    },
+    "quality": {
+      "minimum_roi_std": 8.0,
+      "canny_thresholds": [
+        40,
+        120
+      ],
+      "minimum_canny_edges": 80
+    }
+  },
+  "quality": {
+    "result": "PASS",
+    "roi_std": 40.939861112264836,
+    "roi_canny_edges": 1005,
+    "roi_bounds_xyxy": [
+      224,
+      214,
+      416,
+      406
+    ],
+    "resized_shape": [
+      128,
+      128
+    ]
+  },
+  "svm_raw_margin": -1.0457689762115479,
+  "svm_margin_semantics": "uncalibrated signed SVM decision value; not probability or anomaly score",
+  "opencv_version": "4.5.4",
+  "numpy_version": "1.24.4"
+}

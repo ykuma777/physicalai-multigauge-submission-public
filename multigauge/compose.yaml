@@ -1,0 +1,22 @@
+name: physicalai-multigauge
+services:
+  simulator:
+    image: airobotbook/ros2-desktop-ai-robot-book-humble@sha256:b58ec74c019aacd9ce4818fa25fc5a9e0a1f22f8c9cd1f5260994bf15cd9eb63
+    pull_policy: never
+    container_name: physicalai-multigauge
+    init: true
+    ports:
+      - "127.0.0.1:6084:80"
+    shm_size: "1g"
+    environment:
+      ROS_DOMAIN_ID: "46"
+      IGN_PARTITION: physicalai_multigauge_46
+      GZ_PARTITION: physicalai_multigauge_46
+      RESOLUTION: 1920x1080
+      FINAL_PROJECT_ROOT: /home/ubuntu/final_project
+      CAMERA_DEMO_ROOT: /home/ubuntu/camera_demo
+    volumes:
+      - ../final_project:/home/ubuntu/final_project
+      - ../final_project/ros2_ws:/home/ubuntu/final_ws
+      - ../camera_demo:/home/ubuntu/camera_demo
+      - .:/home/ubuntu/multigauge
